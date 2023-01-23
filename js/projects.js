@@ -21,4 +21,5 @@ function openProjectGd() {
     document.querySelector('.graphicdesign').style.display = "block";
     document.querySelector('.Webdesign').style.display = "none";
     document.querySelector('.webentwicklung').style.display = "none";
-  }
+  } 
+ 
