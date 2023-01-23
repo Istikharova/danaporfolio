@@ -17,8 +17,8 @@ main .main p{
     padding-bottom: 4rem;
     padding-top: 2rem;
 }
-main .main .btn button{
-    margin: 0 0.5rem;
+.btn-container{
+    display: flex;
 }
 
 /* section bubble */
@@ -50,3 +50,4 @@ main .main .btn button{
     left:40%;
     bottom: 20%;
 }
+
