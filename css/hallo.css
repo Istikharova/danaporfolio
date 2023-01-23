@@ -1,0 +1,52 @@
+main{
+    display: grid;
+    grid-template-columns: 2fr 3fr; 
+    height: 100vh;
+}
+main .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    padding: 6rem;
+    
+}
+main .main p{
+    font-size: 1.5em;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+main .main .btn button{
+    margin: 0 0.5rem;
+}
+
+/* section bubble */
+.bubbleSection{
+    background: var(--black);
+    position: relative;
+    overflow: hidden;
+}
+.bubble{
+    position: absolute;
+}
+.bubbleSection .bubble:nth-child(1){
+    left: 40%;
+    bottom: 70%;
+    width: 5rem;
+    height: 5rem;
+}
+.bubbleSection .bubble:nth-child(2){
+    left:20%;
+    bottom: 50%;
+    width: 4.7rem;
+    height: 4.7rem;
+}
+.bubbleSection .bubble:nth-child(3){
+    left:70%;
+    bottom: 60%;
+}
+.bubbleSection .bubble:nth-child(4){
+    left:40%;
+    bottom: 20%;
+}

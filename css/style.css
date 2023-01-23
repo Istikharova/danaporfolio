@@ -1,0 +1,144 @@
+/* === Small CSS Reset === */
+*{
+    margin: 0;
+    padding: 0;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Space Grotesk', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+/* color */
+:root {
+    --darkgreen: #45A49D;
+    --green: #40B8A2;
+    --lightgreen: #75D6AD;
+    --white: #F6FDFD;
+    --black: #0E1D33
+  }
+  
+/* Text markierung */
+::-moz-selection { background: var(--green); color: var(--white); }
+	::selection { background: var(--green); color: var(--white); }
+
+    /* font */
+h1,h2,h3{
+    color: var(--green);
+    font-weight: 400;
+}
+
+h1{
+    font-size: 5em;
+    opacity: 0.3;
+    line-height: 60px;
+    margin-bottom: 0.5rem;
+}
+h2{
+    font-size: 3em;
+    line-height: 40px;
+    margin-bottom: 0.5rem;  
+}
+p{
+    color: var(--black);
+    font-weight: 200;   
+}
+/* nav */
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--white);
+    padding: 2rem;
+}
+nav .socialMedia{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    border-bottom: solid 1px var(--green);
+    border-radius: 5px;
+    width: 70%;
+
+   /*  border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px; */
+}
+nav ul li a{
+    color: var(--black);
+    padding: 0 1.5rem;
+    border-radius: 50px;
+}
+nav p{
+    font-size: 2.5em;
+    align-self: center;
+}
+
+/* icons */
+
+.bubble{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background: linear-gradient(178.22deg, #45A49D 8.65%, #40B8A2 40.66%, #75D6AD 78.96%);
+    box-shadow: inset 0px 4px 10px rgba(69, 164, 157, 0.2);
+}
+nav .socialMedia .icon{
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* btn */
+button{
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(54, 128, 123, 0.37);
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 167px;
+    height: 47px;  
+}
+
+.full{
+    background: linear-gradient(90deg, #45A49D, transparent) #75D6AD;
+    transition: background-color 3s;
+}
+.full a{
+    color: var(--white);
+}
+
+.full:hover{
+    background: linear-gradient(90deg,#75D6AD , transparent) #45A49D;
+}
+
+.ghost{
+    position: relative;
+    background: var(--white);
+    box-shadow: -1px 0 var(--darkgreen), 0 1px var(--lightgreen), 1px 0 var(--lightgreen), 0 -1px var(--darkgreen);
+    
+}   
+.ghost a{
+    color: var(--green);
+
+}
+
+.ghost::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px; 
+    border: 4px solid transparent;
+    box-shadow: 0px 4px 4px rgba(54, 128, 123, 0.37);
+} 
+
+
+
+
+
