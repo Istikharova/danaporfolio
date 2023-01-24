@@ -15,7 +15,7 @@ function openProjectWd() {
     
   }
 
-document.querySelector('.tree').addEventListener("click", openProjectGd);
+document.querySelector('.thre').addEventListener("click", openProjectGd);
 
 function openProjectGd() {
     document.querySelector('.graphicdesign').style.display = "block";

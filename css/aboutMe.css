@@ -1,8 +1,12 @@
+
+body{
+    background: var(--white);
+}
 /* header */
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: var(--white);
+    
 }
 .header{
     display: flex;

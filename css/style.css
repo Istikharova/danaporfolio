@@ -49,7 +49,9 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: var(--white);
-    padding: 2rem;
+    padding: 2rem 0;
+    width: 90%;
+    margin: 0 auto;
 }
 nav .socialMedia{
     display: flex;
@@ -60,7 +62,7 @@ nav ul{
     align-items: center;
     border-bottom: solid 1px var(--green);
     border-radius: 5px;
-    width: 70%;
+    /* width: 70%; */
 
    /*  border-top-left-radius: 0px;
     border-bottom-right-radius: 0px; */
@@ -71,7 +73,7 @@ nav ul li a{
     border-radius: 50px;
 }
 nav p{
-    font-size: 2.5em;
+    font-size: 2em;
     align-self: center;
 }
 

@@ -2,24 +2,26 @@ body{
     background: var(--white);
 }
 header{
-    height: 20rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  
+    background: var(--black);
 }
-header h1, header h2{
-    margin-left: 4rem;
-}
-header h1{
-    margin-top: 3rem;
+header > div{
+    width: 90%;
+    margin: 0 auto;
+
 }
 
 /* nav filter */
 .projects > ul{
     display: flex; 
     justify-content: center;
-    margin: auto;
-    width: 40%;
+    margin:  4rem auto;
+    min-width: 20rem;
+    max-width: 40rem;
     border-radius: 50px;
 }
 .projects ul li{
@@ -90,7 +92,7 @@ header h1{
 
 .webentwicklung, .graphicdesign{
     display: none;
-}
+} 
 
 /* footer */
 footer{
@@ -106,4 +108,30 @@ footer .footer{
     width: 80%;
     margin: 2rem;
     border-radius: 3px;
+}
+
+/* fade animation */
+
+.fade {
+	animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	        animation-duration: 1.5s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0
+	} to {
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0
+	} to {
+		opacity: 1
+	}
 }
