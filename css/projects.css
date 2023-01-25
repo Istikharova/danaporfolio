@@ -29,19 +29,12 @@ header > div{
 /* section projekte */
 .allProjects{
     width: 90%;
-    /* overflow-x: hidden; */
     margin: 0 auto;
-   
 }
-.allProjects .containerProjects{
-    width: 100%;
-   /*  overflow-x: hidden; */
-} 
 .projects .containerProjects h2{
     text-align: center;
     margin-top: 4rem;
 }
-
 .projects .containerProjects img{
     width: 20rem;
 }

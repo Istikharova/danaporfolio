@@ -24,8 +24,13 @@ header .img{
 }
 
 header .img button{
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
     grid-column-start: 2;
     grid-row-start: 2;
+    align-items: center;
+    flex-direction: column;
 }
 header .img .imgDiv{
     width: 20rem;
@@ -34,8 +39,12 @@ header .img .imgDiv{
     border-radius:50%;
     margin: auto;
     grid-column-start: 1;
-
 }
+header .img span{
+    color: var(--white);
+    
+}
+
 .section-container{
     background: var(--black);
     height: 25rem;
