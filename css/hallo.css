@@ -1,7 +1,7 @@
 main{
     display: grid;
     grid-template-columns: 2fr 3fr; 
-    height: 100vh;
+    height: 100vh; 
 }
 main .main{
     display: flex;
@@ -53,3 +53,18 @@ main .main p{
     bottom: 20%;
 }
 
+/* media queries */
+@media screen and (max-width: 920px) {
+    main {
+    height: 50%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+        
+    }
+    .bubbleSection{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+    }
+  }

@@ -108,8 +108,6 @@ nav .socialMedia .icon{
     width: 167px;
     height: 47px;  
 }
-
-
 .full{
     background: linear-gradient(90deg, #45A49D, transparent) #75D6AD;
     transition: background-color 3s;
@@ -117,11 +115,9 @@ nav .socialMedia .icon{
 .full a{
     color: var(--white);
 }
-
 .full:hover{
     background: linear-gradient(90deg,#75D6AD , transparent) #45A49D;
 }
-
 .ghost{
     position: relative; 
     z-index: 1;
