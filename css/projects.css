@@ -131,11 +131,12 @@ footer .footer{
 
 /* media-queries */
 @media screen and (max-width: 1200px) {
-  .projects .containerProjects .projects{
-    flex-direction: column;
-  }
-  .projects .containerProjects .projects .wrapper{
-    width: auto;
+    
+    .projects .containerProjects .projects{
+        flex-direction: column;
+    }
+    .projects .containerProjects .projects .wrapper{
+        width: auto;
     }
     .projects .containerProjects .projects .img{
         display: flex;
