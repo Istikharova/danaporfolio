@@ -21,6 +21,7 @@ header > div{
     min-width: 20rem;
     max-width: 40rem;
     border-radius: 50px;
+    overflow-x: auto;
 }
 .projects ul li{
     padding: 1rem 2rem;
