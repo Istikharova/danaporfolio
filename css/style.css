@@ -24,7 +24,6 @@
 	::selection { background: var(--green); color: var(--white); }
 
 /* scrollbar */
-    /* width */
 ::-webkit-scrollbar {
     width: 0.5rem;
     height: 3px
@@ -65,7 +64,6 @@ p{
 }
 
 /* icons */
-
 .bubble{
     display: flex;
     justify-content: center;

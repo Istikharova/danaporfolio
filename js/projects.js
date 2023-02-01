@@ -1,9 +1,10 @@
 document.querySelector('.first').addEventListener("click", openProjectWe);
 
 function openProjectWe() {
-    document.querySelector('.webentwicklung').style.display = "block";
-    document.querySelector('.Webdesign').style.display = "none";
+  document.querySelector('.Webdesign').style.display = "none";
     document.querySelector('.graphicdesign').style.display = "none";
+    document.querySelector('.webentwicklung').style.display = "block";
+    
   }
 
 document.querySelector('.two').addEventListener("click", openProjectWd);

@@ -23,6 +23,7 @@ main .main p{
 .btn-container div{
     margin-right: 1rem;
 }
+
 /* section bubble */
 .bubbleSection{
     background: var(--black);
@@ -75,8 +76,6 @@ main .main p{
     height: 50%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-
-        
     }
     .bubbleSection{
         grid-column-start: 1;

@@ -75,7 +75,6 @@ header > div{
 .projects .containerProjects .projects .wrapper .tech ul li{
     padding: 0;
 }
-
 .containerProjects .projects:nth-of-type(even) {
     flex-direction: row-reverse;
 }
@@ -87,7 +86,6 @@ header > div{
     font-weight: 500;
     
 }
-
 .webentwicklung, .graphicdesign{
     display: none;
 } 
@@ -99,7 +97,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
 footer .footer{
     background: var(--green);
     height: 3px;
@@ -109,7 +106,6 @@ footer .footer{
 }
 
 /* fade animation */
-
 .fade {
 	animation-name: fade;
 	-webkit-animation-duration: 1.5s;
