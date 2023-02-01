@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/gradientAnimation.css" />
     <link rel="stylesheet" href="../css/nav.css" />
     <link rel="stylesheet" href="../css/aboutMe.css" />
+    <link rel="stylesheet" href="../css/fadInAnimation.css" />
 
     <title>Dana's Portfolio</title>
   </head>
@@ -48,10 +49,25 @@
           Folgende Dinge im Leben machen mich unter anderem glücklich: Dankbarkeit für viele Chancen
           und Möglichkeiten, Vertrauen schenken sowie Vertrauen erhalten. Und Gummibärchen!»
         </p>
+        <p>Kontakt: dana.istikharova@bluewin.ch</p>
       </div>
       <div class="img">
         <button class="btn-hobbies btn gradient">meine<span>hobbies</span></button>
-        <div class="imgDiv"></div>
+        <div class="icon-container">
+          <div class="icon-hobby">
+            <img
+              src="../img/icons/game-icons_three-friends.svg"
+              alt="mit Freunden was Unternehmen"
+              title="Freunde"
+            />
+            <img src="../img/icons/laptop.svg" alt="Webseiten erstellen" title="Laptop" />
+          </div>
+          <div class="icon-hobby">
+            <img src="../img/icons/mdi_paint-outline.svg" alt="Zeichnen" title="Zeichnen" />
+            <img src="../img/icons/snowboard.svg" alt="Snowboarden" title="Snowboard" />
+          </div>
+        </div>
+        <img class="img-me" src="../img/dana_portfolio.png" alt="Dana" />
       </div>
     </header>
     <section class="section-container">
@@ -86,5 +102,6 @@
       <div class="footer"></div>
     </footer>
     <script src="../js/nav.js"></script>
+    <script src="../js/hobbiesBtn.js"></script>
   </body>
 </html>

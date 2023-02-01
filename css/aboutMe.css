@@ -6,58 +6,99 @@ body{
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    margin-top: 5rem;   
 }
 .header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    margin: auto;
+    margin:  auto; 
 }
 header .img{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 25%);
-}
+    grid-template-columns: 30% 70% ;
+    grid-template-rows: repeat(4, 25%);   
+} 
 header .img button{
+    position: relative;
     width: 125px;
     height: 125px;
     border-radius: 100%;
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 1;
     align-items: center;
     flex-direction: column;
-}
-header .img .imgDiv{
-    width: 20rem;
-    height: 20rem;
-    border: solid var(--green) 2px;
-    border-radius:50%;
-    margin: auto;
-    grid-column-start: 1;
-}
-header .img span{
-    color: var(--white);
+    left: 10%;
     
 }
+header .img button span{
+    color: var(--white);
+}
+header .img .img-me {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+header .img .icon-container .icon-hobby{
+    align-self: flex-end;
+}
+header .img .icon-container{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    transition:0.5s ease;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s ease 0.1s;
+}
+
+header .img .icon-container img {
+    width: 40px;
+    height: 40px;
+    margin: 0.5rem;
+}
+/* icons open */
+header .img .icon-container.active {
+    opacity: 1;
+    transform: scale(1);
+}
+/* icons open animation*/
+
+header .img .icon-container .icon-hobby img {
+    -webkit-animation: fadeInLi 0.6s 0.2s forwards;
+            animation: fadeInLi 0.6s 0.2s forwards;
+  } 
+  header .img .icon-container .icon-hobby img:nth-child(2) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  header .img .icon-container .icon-hobby img:nth-child(3) {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  header .img .icon-container .icon-hobby img:nth-child(4) {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+  }
+
+
+/* section über mich */
 
 .section-container{
     background: var(--black);
-    min-height: 25rem;
-    
+    min-height: 25rem;   
 }
 .section-container .wrapper{
     width: 90%;
     margin: auto;
     background: var(--black);
-   
-    
 }
 .section-container .wrapper h2{
     padding: 3rem 0;
-    margin-top: 4rem;
-    
 }
 .section-container .container{
     display: flex;
@@ -69,7 +110,6 @@ header .img span{
     flex-direction: column;
     justify-content: space-between;
 }
-
 .section-container .container p{
     color: var(--white);
     font-size: 1.7em;
@@ -97,11 +137,9 @@ footer .footer{
 /* media-querie */
 @media screen and (max-width: 1200px) {
     header {
-   /*  height: 50%; */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
 
-        
     }
     header .imgDiv{
         grid-column-start: 3;
@@ -109,18 +147,47 @@ footer .footer{
         grid-row-start: 1;
     }
   }
+  
 @media screen and (max-width:  700px) {
+    header{
+        padding-bottom: 2rem;
+    }
+    header .img .img-me {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        width: 20rem;
+        height: 20rem;
+        
+    }
+    header .header{
+        padding-bottom: 4rem;
+    }
+    header .img button{
+        position: static;
+        grid-column-start: 1;
+        grid-row-start: 4;
+        width: 100px;
+        height: 100px;
+        margin-left: 2rem;
+        align-self:flex-end;
+        
+    }
+    header .img .icon-container{
+        grid-column-start: 2;
+        grid-row-start: 4;
+        margin-left: 2rem;
+    }
+    header .img .icon-container .icon-hobby{
+        align-self: flex-start;
+    }
     .section-container .container{
-   /*  height: 50%; */
     flex-direction: column;
-    
-   
     }
     .section-container .container div{
         width: 100%;
         margin: 1rem 0;
-        
-
     }
     footer{
         padding-top: 4rem;
