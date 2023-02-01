@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Dana Portfolio</title>
 
     <script src="https://kit.fontawesome.com/3e61d856e3.js" crossorigin="anonymous"></script>
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hallo.css" />
     <link rel="stylesheet" href="css/gradientAnimation.css" />
+    <link rel="stylesheet" href="css/bounceAnimation.css" />
   </head>
   <body>
     <main>
@@ -35,11 +37,30 @@
         </div>
       </section>
       <section class="bubbleSection">
-        <div class="bubble gradient icon"><i class="fa-brands fa-github activeGradient"></i></div>
-        <div class="bubble gradient icon"><i class="fa-brands fa-linkedin activeGradient"></i></div>
-        <div class="bubble gradient"></div>
-        <div class="bubble gradient"></div>
+        <div class="bubble b-one gradient bounce icon">
+          <a href="https://github.com/Istikharova" target="_blank" rel="noopener noreferrer"
+            ><img class="activeGradient" src="img/icons/github.svg" alt="GitHub" title="GitHub"
+          /></a>
+        </div>
+        <div class="bubble b-two gradient bounce icon">
+          <a
+            href="https://www.linkedin.com/in/dana-istikharova-a420211a5/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              class="activeGradient"
+              src="img/icons/mdi_linkedin.svg"
+              alt="LinkedIn"
+              title="LinkedIn"
+          /></a>
+        </div>
+        <div class="bubble bounce b-three gradient"></div>
+        <div class="bubble bounce b-four gradient"></div>
+        <div class="bubble bounce b-five gradient"></div>
+        <div class="bubble bounce b-six gradient"></div>
       </section>
     </main>
+    <script src="js/bubbleAnimation.js"></script>
+    <script src="js/textAnimation.js"></script>
   </body>
 </html>

@@ -32,6 +32,10 @@ main .main p{
 .bubble{
     position: absolute;
 }
+.bubble img{
+    width: 40px;
+    height: 40px;
+}
 .bubbleSection .bubble:nth-child(1){
     left: 40%;
     bottom: 70%;
@@ -51,6 +55,18 @@ main .main p{
 .bubbleSection .bubble:nth-child(4){
     left:40%;
     bottom: 20%;
+}
+.bubbleSection .bubble:nth-child(5){
+    left:50%;
+    bottom: 50%;
+    width: 70px;
+    height: 70px;
+}
+.bubbleSection .bubble:nth-child(6){
+    left: 70%;
+    bottom: 20%;
+    width: 70px;
+    height: 70px;
 }
 
 /* media queries */

@@ -82,7 +82,10 @@ nav .socialMedia .icon{
 }
  
 /* btn */
-
+.socialMedia .icon img{
+    width: 30px;
+    height: 30px;
+}
 .btn {
     display: flex;
     justify-content: center;
