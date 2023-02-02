@@ -37,6 +37,7 @@ nav .nav{
 }
 .nav-container.active ul li {
     -webkit-animation: fadeInLi 0.6s 0.2s forwards;
+    animation: fadeInLi 0.6s 0.2s forwards;
 } 
 .nav-container.active ul li:nth-child(2) {
   -webkit-animation-delay: 0.4s;
@@ -136,8 +137,7 @@ nav p{
     left:10%;
   }
   nav .nav ul li{
-align-self: center;
+  align-self: center;
   margin: 0.5rem 0;
-  
   }
 }
