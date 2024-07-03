@@ -20,9 +20,7 @@ main .main p{
 .btn-container{
     display: flex;
 }
-.btn-container div{
-    margin-right: 1rem;
-}
+
 
 /* section bubble */
 .bubbleSection{
