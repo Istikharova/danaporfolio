@@ -2,117 +2,143 @@
 body{
     background: var(--white);
 }
-/* header */
-header{
+/* Section Abount me */
+.section-about-me{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 5rem;   
-}
-.header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    margin:  auto; 
-}
-header .img{
-    display: grid;
-    grid-template-columns: 30% 70% ;
-    grid-template-rows: repeat(4, 25%);   
+    grid-template-columns: repeat(3, 1fr); 
+    width: 90%;
+    gap: 6rem;
+    margin: 10rem auto 10rem auto;  
 } 
-header .img button{
-    position: relative;
-    width: 125px;
-    height: 125px;
-    border-radius: 100%;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    align-items: center;
-    flex-direction: column;
-    left: 10%;
+.about-me p{
+    margin-top: 3rem;
     
 }
-header .img button span{
-    color: var(--white);
+/* Section meine Daten */
+.my-daten{
+    display: grid;
+    gap: 1rem;
 }
-header .img .img-me {
-    grid-column-start: 2;
-    grid-row-start: 1;
-}
-header .img .icon-container .icon-hobby{
-    align-self: flex-end;
-}
-header .img .icon-container{
-    grid-column-start: 1;
-    grid-row-start: 1;
+.my-daten .hobbies{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
-    align-self: center;
-    transition:0.5s ease;
-    opacity: 0;
-    transform: scale(0);
-    transition: all 0.3s ease 0.1s;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem 0; 
+    width: 100%;
+    box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
+    border-radius: 10px;
 }
-header .img .icon-container img {
-    width: 40px;
-    height: 40px;
-    margin: 0.5rem;
+/* box meine daten */
+.section-about-me .my-daten button{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+.section-about-me .my-daten img{
+    width: 63px;
+    height: 63px;
+    padding: 0.3rem;
+}
+/* email */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: var(--black);
+    border-radius: 10px;
+    
+}
+.contact .email{
+    display: flex;
+    box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
 }
 
+/* me img */
+.img-me{
+    border-radius: 10px;
+    box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
+}
 /* icons open */
-header .img .icon-container.active {
+.container-about-me .img .icon-container.active {
     opacity: 1;
     transform: scale(1);
 }
 
 /* icons open animation*/
-header .img .icon-container .icon-hobby img {
+.container-about-me .img .icon-container .icon-hobby img {
     -webkit-animation: fadeInLi 0.6s 0.2s forwards;
             animation: fadeInLi 0.6s 0.2s forwards;
   } 
-header .img .icon-container .icon-hobby img:nth-child(2) {
+.container-about-me .img .icon-container .icon-hobby img:nth-child(2) {
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
 }
-header .img .icon-container .icon-hobby img:nth-child(3) {
+.container-about-me .img .icon-container .icon-hobby img:nth-child(3) {
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
 }
-header .img .icon-container .icon-hobby img:nth-child(4) {
+.container-about-me .img .icon-container .icon-hobby img:nth-child(4) {
     -webkit-animation-delay: 0.8s;
             animation-delay: 0.8s;
 }
 
 /* section über mich */
-.section-container{
+.section-skills{
     background: var(--black);
-    min-height: 25rem;   
+    padding: 5rem 0;  
 }
-.section-container .wrapper{
+.container-skills {
     width: 90%;
     margin: auto;
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(4,1fr);
     background: var(--black);
 }
-.section-container .wrapper h2{
-    padding: 3rem 0;
+.container-skills div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-radius: 10px;
+    background: linear-gradient(47deg, rgba(246, 253, 253, 0.1) -92.29%, rgba(14, 29, 51, 0.34) 76.88%);
+    box-shadow: 0px 4px 47.7px -3px rgba(0, 0, 0, 0.25);
+    color: var(--white);
+    min-height: 200px;
+
 }
-.section-container .container{
+
+.container-skills .icon{
+    width: 63px;
+    height: 63px;
+    background: var(--green);
+    border-radius: 10px;
+}
+.container-my-skills .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.section-container .container div{
+.container-my-skills .container div{
     display:flex ;
     flex-direction: column;
     justify-content: space-between;
 }
-.section-container .container p{
+.container-my-skills .container p{
     color: var(--white);
     font-size: 1.7em;
 }
-.section-container .container h3{
+.container-my-skills .container h3{
     color: var(--green);
 }
 
@@ -147,10 +173,10 @@ footer .footer{
   }
   
 @media screen and (max-width:  700px) {
-    header{
+    .container-about-me{
         padding-bottom: 2rem;
     }
-    header .img .img-me {
+    .container-about-me {
         grid-column-start: 1;
         grid-row-start: 1;
         margin-left: 2rem;
@@ -159,10 +185,10 @@ footer .footer{
         height: 20rem;
         
     }
-    header .header{
+    .container-about-me .header{
         padding-bottom: 4rem;
     }
-    header .img button{
+    .container-about-me .img button{
         position: static;
         grid-column-start: 1;
         grid-row-start: 4;
@@ -172,18 +198,18 @@ footer .footer{
         align-self:flex-end;
         
     }
-    header .img .icon-container{
+    h.container-about-me .img .icon-container{
         grid-column-start: 2;
         grid-row-start: 4;
         margin-left: 2rem;
     }
-    header .img .icon-container .icon-hobby{
+    .container-about-me .img .icon-container .icon-hobby{
         align-self: flex-start;
     }
-    .section-container .container{
+    .container-skills .container{
     flex-direction: column;
     }
-    .section-container .container div{
+    .container-skills .container div{
         width: 100%;
         margin: 1rem 0;
     }

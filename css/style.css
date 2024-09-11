@@ -14,11 +14,12 @@
 
 /* color */
 :root {
-  --darkgreen: #45a49d;
+  --darkgreen: #0D8980;
   --green: #40b8a2;
   --lightgreen: #75d6ad;
   --white: #f6fdfd;
   --black: #0e1d33;
+  --opagreen: rgba(64, 184, 162, 0.16);
 }
 
 /* Text markierung */
@@ -48,19 +49,26 @@
   background: var(--black);
   border-radius: 10px;
 }
+
 /* font */
-h1,
+
+h1 span,
 h2,
 h3 {
   color: var(--green);
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 h1 {
-  font-size: 5em;
-  opacity: 0.3;
+  display: flex;
+  flex-direction: column;
+  font-size: 7em;
   line-height: 60px;
   margin-bottom: 0.5rem;
+  color: var(--opagreen);
+  font-weight: 400;
+  text-transform: uppercase;
 }
 h2 {
   font-size: 3em;
@@ -70,7 +78,13 @@ h2 {
 p {
   color: var(--black);
   font-weight: 200;
-  font-size: 1.5em;
+  font-size: 24px;
+}
+span{
+  font-size: 50%;
+}
+ul li{
+  font-size: 20px;
 }
 
 /* icons */
@@ -105,6 +119,7 @@ nav .socialMedia .icon {
   border-radius: 50px;
   cursor: pointer;
   text-transform: uppercase;
+  font-weight: 500;
   width: 167px;
   height: 47px;
   margin-right: 3rem;
