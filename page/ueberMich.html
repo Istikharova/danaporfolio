@@ -20,24 +20,23 @@
     <title>Dana's Portfolio</title>
   </head>
   <body>
-    <nav>
+    <header>
       <p>Dana'Portfolio</p>
-      <div class="nav">
-        <div class="nav-container">
-          <div class="button-wrapper bubble gradient icon">
-            <div class="menu-icon-line half first"></div>
-            <div class="menu-icon-line middle"></div>
-            <div class="menu-icon-line half last"></div>
-          </div>
-          <ul>
-            <li><a class="activeGradient" href="../index.html">Hello</a></li>
-            <li><a class="activeGradient" href="meineProjekte.html">Meine Projekte</a></li>
-            <li><a class="activeGradient" href="#">Über mich</a></li>
+        <nav class="nav-container">
+          <ul class="btn full gradient ">
+            <li class="activeGradient" ><a class="nav-li" href="../index.html">Hello</a></li>
+            <li class="activeGradient" ><a class="activeGradient" href="#">Meine Projekte</a></li>
+            <li class="activeGradient" >
+              <a class="activeGradient" href="ueberMich.html">Über mich</a>
+            </li>
           </ul>
-        </div>
+        </nav>
         <div class="socialMedia">
           <div class="bubble gradient icon">
-            <a href="https://github.com/Istikharova" target="_blank" rel="noopener noreferrer"
+            <a
+              href="https://github.com/Istikharova"
+              target="_blank"
+              rel="noopener noreferrer"
               ><img src="../img/icons/github.svg" alt="Github" title="Github"
             /></a>
           </div>
@@ -46,66 +45,83 @@
               href="https://www.linkedin.com/in/dana-istikharova-a420211a5/"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="../img/icons/mdi_linkedin.svg" alt="linedIn" title="LinkedIn"
+              ><img
+                src="../img/icons/mdi_linkedin.svg"
+                alt="linedIn"
+                title="LinkedIn"
             /></a>
           </div>
         </div>
-      </div>
-    </nav>
-    <header>
-      <div class="header">
-        <h1>Über mich</h1>
-        <h2>Ich bin Dana</h2>
+      
+    </header>
+    <section class="container-about-me">
+      <div class="about-me">
+        <h1>Über<span>Ich bin Dana</span> mich</h1>
         <p>
           Folgende Dinge im Leben machen mich unter anderem glücklich: Dankbarkeit für viele Chancen
           und Möglichkeiten, Vertrauen schenken sowie Vertrauen erhalten. Und Gummibärchen!»
         </p>
-        <p>Kontakt: dana.istikharova@bluewin.ch</p>
       </div>
-      <div></div>
-      <div class="img">
-        <button class="btn-hobbies btn gradient">meine<span>hobbies</span></button>
-        <div class="icon-container">
-          <div class="icon-hobby">
-            <img
-              src="../img/icons/game-icons_three-friends.svg"
-              alt="mit Freunden was Unternehmen"
-              title="Freunde"
-            />
-            <img src="../img/icons/laptop.svg" alt="Webseiten erstellen" title="Laptop" />
-          </div>
-          <div class="icon-hobby">
-            <img src="../img/icons/mdi_paint-outline.svg" alt="Zeichnen" title="Zeichnen" />
-            <img src="../img/icons/snowboard.svg" alt="Snowboarden" title="Snowboard" />
+      <div class="my-daten">
+        <div class="hobbies">
+          <button class="btn-hobbies btn gradient">meine<span>hobbies</span></button>
+          <div class="icon-container">
+            <div class="icon-hobby">
+              <img
+                src="../img/icons/game-icons_three-friends.svg"alt="mit Freunden was Unternehmen"title="Freunde"/>
+              <img src="../img/icons/laptop.svg" alt="Webseiten erstellen" title="Laptop" />
+            </div>
+            <div class="icon-hobby">
+              <img src="../img/icons/mdi_paint-outline.svg" alt="Zeichnen" title="Zeichnen" />
+              <img src="../img/icons/snowboard.svg" alt="Snowboarden" title="Snowboard" />
+            </div>
           </div>
         </div>
-        <img class="img-me" src="../img/dana_portfolio.png" alt="Dana" />
-      </div>
-    </header>
-    <section class="section-container">
-      <div class="wrapper">
-        <h2>Was ich mache</h2>
-        <div class="container">
-          <div>
-            <h3>Webdesign</h3>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>WordPress</p>
-          </div>
-          <div>
-            <h3>UX-Design</h3>
-            <p>Figma</p>
-            <p>Adobe XD</p>
-          </div>
-          <div>
-            <h3>Graphicdesign</h3>
-            <p>Adobe Photoshop</p>
-            <p>Adobe InDesign</p>
-            <p>Adobe PremierePro</p>
+        <div class="contact">
+          <h2>Kontakt</h2>
+          <div class="email">
+            <img src="../img/icons/game-icons_three-friends.svg" alt="mit Freunden was Unternehmen" title="Freunde"/>
+            <p>meine E-mai: dana.istikharova@bluewin.ch</p>
           </div>
         </div>
       </div>
+      <div class="img-me">
+        <img src="../img/dana_portfolio.png" alt="Dana" />
+      </div>
+    </section>  
+
+      
+    
+    <section class="section-skills">
+      <h2>Was ich mache</h2>
+        <div class="container-skills">
+          <div>
+            <div class="icon">hier icon</div>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <div class="icon">hier icon</div>
+              <ul>
+                <li>WorpdPress</li>
+                <li>Shopify</li>
+                <li>Shopware</li>
+              </ul>
+          </div>
+          <div>
+            <div class="icon">hier icon</div>
+              <ul>
+                <li>Adobe Photoshop</li>
+                <li>Adobe InDesign</li>
+                <li>Figma</li>
+                <li>Google Webdesigner</li>
+              </ul>
+          </div>
+        </div>
+      
     </section>
     <footer>
         <a href="meineProjekte.html" class="full btn gradient">Meine Projekte</a>

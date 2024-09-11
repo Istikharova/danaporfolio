@@ -1,16 +1,14 @@
 /* nav burger menü*/
-nav{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+header{
+  display: flex;
+  justify-content: space-between;
   background: var(--white);
   padding: 2rem 0;
   width: 90%;
   margin: 0 auto;
 }
- nav .nav{
+ header .nav{
   display: flex;
-  justify-content: flex-end;
-  /* align-items: center; */ 
 } 
 
 .nav-container ul {
@@ -18,7 +16,7 @@ nav{
   display: flex;
 }
 
-nav ul li a {
+header ul li a {
     color: var(--black);
     font-size: 0.9em;
     margin: 1rem;
@@ -28,37 +26,26 @@ nav ul li a {
   background-color: red;
 
 }
-nav .socialMedia{
+header .socialMedia{
     display: flex;
 } 
 
-nav p{
+header p{
     font-size: 2em;
     align-self: center;
 }
 
 
 /* media queries */
-@media screen and (max-width: 450px) {
-  nav{
+@media screen and (max-width: 700px) {
+  header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  nav .nav{
-    margin-top: 1rem;
-  } 
-  .socialMedia .icon, .nav-container .button-wrapper{
-    margin: 1.5rem;
+  header .nav{
+    margin-top: 2rem;
   }
-  nav .nav ul{
-    height: 200px;
-    width: 200px;
-    left:10%;
-  }
-  nav .nav ul li{
-  align-self: center;
-  margin: 0.5rem 0;
-  }
+
 }
