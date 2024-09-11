@@ -7,33 +7,50 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: var(--black); 
   }
-header{
-    height: 30rem;
+ .projects #filter-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    /* overflow-x: hidden; */
+  } 
+  .projects .title-header{
+    background: var(--black);
+  }
+  .projects .title-header .container-title{
+    width: 90%;
+    margin: auto;
+    padding: 5rem 0;
+  }
+  .projects .point{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+  }
+  .projects #filter-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+  }
+  .projects #filter-nav > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: var(--black);
+    align-items: center;
 }
-header > div{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.projects > ul{
-    position: sticky;
-    top: 1%;
-    z-index: 10000;
-    display: flex; 
-    justify-content: center;
-    margin:  4rem auto;
-    max-width: 40rem;
-    border-radius: 50px;
-    overflow-x: auto;
-}
-.projects ul li{
-    padding: 1rem 2rem;
+.projects #filter-nav ul li{
+    padding: 1rem 0;
     cursor: pointer;
 }
+.projects #filter-nav .stroke{
+    /* align-self: center; */
+    height: 4px;
+    width: 100px;
+    margin-top: 12px;
+    border-radius: 50px;
+}
+
+
 /* section projekte */
 .allProjects{
     width: 90%;

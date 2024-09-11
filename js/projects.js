@@ -1,36 +1,33 @@
-// Finde alle Listenelemente
-const listItems = document.querySelectorAll('#filter-nav li');
+// Finde alle .point-li Elemente
+const pointItems = document.querySelectorAll('.point-li');
 
-// Initialisierung des zuletzt ausgewählten Elements
+// Initialisiere das zuletzt ausgewählte Element
 let lastSelectedElement = null;
 
 // Funktion zum Hinzufügen des Punktes und Entfernen des vorherigen Punktes
 function toggleDot(element) {
-  // Überprüfen, ob das letzte ausgewählte Element existiert und unterschiedlich zum aktuellen Element ist
-  if (lastSelectedElement && lastSelectedElement !== element) {
-    // Wenn ja, entferne den Punkt vom letzten ausgewählten Element
-    if (lastSelectedElement.querySelector('.dot')) {
-      lastSelectedElement.removeChild(lastSelectedElement.querySelector('.dot'));
-    }
-  }
+  // Setze alle Punkte zurück (mache sie weiß)
+  pointItems.forEach(item => {
+    item.querySelector('.point').classList.remove('full');
+    item.querySelector('.point').classList.add('ghost');
+  });
 
-  // Füge den Punkt zum aktuellen Element hinzu
-  if (!element.querySelector('.dot')) {
-    const dot = document.createElement('div');
-    dot.className = 'dot';
-    element.appendChild(dot);
-  }
-
-  // Setze das aktuelle Element als das zuletzt ausgewählte Element
-  lastSelectedElement = element;
+  // Setze den angeklickten Punkt auf grün (full)
+  const point = element.querySelector('.point');
+  point.classList.remove('ghost');
+  point.classList.add('full');
 }
 
-// Füge Eventlistener für jedes Listenelement hinzu
-listItems.forEach(item => {
+// Füge Eventlistener für jedes point-li Element hinzu
+pointItems.forEach(item => {
   item.addEventListener('click', () => {
+    // Färbe den Punkt entsprechend ein
     toggleDot(item);
-    // Zeige die entsprechende Projekt-Kategorie basierend auf dem geklickten Listenelement an
-    const category = item.classList[1]; // Die zweite Klasse des Listenelements gibt die Kategorie an
+
+    // Hole die zugehörige Kategorie aus dem li-Element (z.B. 'all', 'webdesign', etc.)
+    const category = item.querySelector('li').classList[1]; // Die zweite Klasse des li-Elements gibt die Kategorie an
+
+    // Zeige die entsprechende Projekt-Kategorie an
     showProjects(category);
   });
 });

@@ -20,57 +20,59 @@
   <body>
     <header>
       <p>Dana'Portfolio</p>
-      <div class="header">
-        <div class="nav-container">
-          <ul class="btn full">
+        <nav class="nav-container">
+          <ul class="btn full gradient ">
             <li class="activeGradient" ><a class="nav-li" href="../index.html">Hello</a></li>
             <li class="activeGradient" ><a class="activeGradient" href="#">Meine Projekte</a></li>
             <li class="activeGradient" >
               <a class="activeGradient" href="ueberMich.html">Über mich</a>
             </li>
           </ul>
-        </div>
-        <div class="socialMedia">
-          <div class="bubble gradient icon">
-            <a
-              href="https://github.com/Istikharova"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="../img/icons/github.svg" alt="Github" title="Github"
-            /></a>
+          <div class="socialMedia">
+            <div class="bubble gradient icon">
+              <a
+                href="https://github.com/Istikharova"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="../img/icons/github.svg" alt="Github" title="Github"
+              /></a>
+            </div>
+            <div class="bubble gradient icon">
+              <a
+                href="https://www.linkedin.com/in/dana-istikharova-a420211a5/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="../img/icons/mdi_linkedin.svg"
+                  alt="linedIn"
+                  title="LinkedIn"
+              /></a>
+            </div>
           </div>
-          <div class="bubble gradient icon">
-            <a
-              href="https://www.linkedin.com/in/dana-istikharova-a420211a5/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img
-                src="../img/icons/mdi_linkedin.svg"
-                alt="linedIn"
-                title="LinkedIn"
-            /></a>
-          </div>
-        </div>
-      </div>
+        </nav>
     </header>
-    <div><!-- hier war der header -->
-      <div>
-        <h1 class="scroll">Meine Projekte</h1>
-        <h2 class="scroll">Durchstöbere meine Projekte</h2>
-      </div>
-    </div>
     <section class="projects">
-      <ul class="gradient" id="filter-nav">
-        <li class="activeGradient webdesign two">Webdesign</li>
-        <li class="activeGradient webentwicklung">Webentwicklung</li>
-        <li class="activeGradient graphicdesign">Graphicdesign</li>
-      </ul>
-
+        <div class="title-header">
+          <div class="container-title">
+            <h1 class="">Meine <span>Durchstöbere <br> meine Projekte</span> Projekte</h1>
+          </div>
+        </div>
+      
+        <ul id="filter-nav">
+          <div class="stroke full"></div>
+          <div class="point-li"><div class="point full"></div><li class="activeGradient all">Alle Projekte</li></div>
+          <div class="stroke full"></div>
+          <div class="point-li"><div class="point ghost"></div><li class="activeGradient webdesign two">Webdesign</li></div>
+          <div class="stroke full"></div>
+          <div class="point-li"><div class="point ghost"></div><li class="activeGradient webentwicklung">Webentwicklung</li></div>
+          <div class="stroke full"></div>
+          <div class="point-li"><div class="point ghost"></div><li class="activeGradient graphicdesign">Graphicdesign</li></div>
+          <div class="stroke full"></div>
+        </ul>
 
 
       <div class="allProjects">
         <div class="containerProjects fade webdesign">
-          <h2>Webdesign</h2>
           <div class="projects wd">
             <div class="img">
               <img
@@ -174,12 +176,7 @@
             </div>
           </div>
         </div>
-
-
-
-
         <div class="containerProjects fade webentwicklung">
-          <h2>Webentwicklung</h2>
           <div class="projects">
             <div class="img">
               <img src="../img/laptop_template-sunrise.png" alt="" />
@@ -283,12 +280,7 @@
             </div>
           </div>
         </div>
-
-
-
-
         <div class="containerProjects fade graphicdesign">
-          <h2>Graphicdesign</h2>
           <div class="projects">
             <div class="img">
               <img src="../img/laptop_template-accoliente.png" alt="" />

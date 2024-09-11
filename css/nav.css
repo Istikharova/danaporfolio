@@ -5,7 +5,7 @@ header{
   background: var(--white);
   padding: 2rem 0;
   width: 90%;
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 1rem auto;
 }
 
 .nav-container{
@@ -14,10 +14,7 @@ header{
 .nav-container ul {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 2rem;
-  
+  margin: 0;  
 } 
 
 header ul li a {

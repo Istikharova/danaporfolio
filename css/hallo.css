@@ -19,6 +19,7 @@ main .main p{
 }
 .btn-container{
     display: flex;
+    gap: 10px;
 }
 
 
