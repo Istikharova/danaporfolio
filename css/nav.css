@@ -3,9 +3,9 @@ header{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   background: var(--white);
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 90%;
-  margin: 0 auto 1rem auto;
+  margin: auto;
 }
 
 .nav-container{
@@ -14,7 +14,7 @@ header{
 .nav-container ul {
   width: 100%;
   display: flex;
-  margin: 0;  
+  justify-content: center; 
 } 
 
 header ul li a {

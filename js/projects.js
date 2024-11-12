@@ -35,14 +35,18 @@ pointItems.forEach(item => {
 // Funktion, um die Projekte basierend auf der Kategorie anzuzeigen
 function showProjects(category) {
   // Verstecke alle Projektcontainer
-  const allProjects = document.querySelectorAll('.containerProjects');
+  const allProjects = document.querySelectorAll('.container-projects');
   allProjects.forEach(project => {
     project.style.display = 'none';
   });
 
   // Zeige nur den Projektcontainer für die ausgewählte Kategorie an
-  const selectedProjects = document.querySelector(`.containerProjects.${category}`);
+  const selectedProjects = document.querySelector(`.container-projects.${category}`);
   if (selectedProjects) {
     selectedProjects.style.display = 'block';
   }
 }
+
+
+
+
