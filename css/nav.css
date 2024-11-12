@@ -24,9 +24,7 @@ header ul li a {
     margin: 1rem;
     z-index: 10;
 }
-.nav-li:hover{
-  color: var(--white);
-}
+
 header .socialMedia{
     display: flex;
 } 
