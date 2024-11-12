@@ -100,7 +100,7 @@ body{
 
 .container-tech ul{
    padding-left: 1.5rem;
-   padding-top: 1rem;
+   padding-top:1rem ;
 }
 
 .container-tech ul li{
@@ -135,11 +135,12 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 10rem;
 }
 footer .footer{
     background: var(--green);
     height: 3px;
-    width: 80%;
+    width: 90%;
     margin: 2rem;
     border-radius: 3px;
 }
@@ -175,16 +176,14 @@ footer .footer{
     .container-projects .projects{
         flex-direction: column;
     }
+    .container-projects .projects:nth-of-type(even) {
+        flex-direction: column;
+    }
     .container-projects .projects .container-discription{
         width: 90%;
     }
     .container-projects .projects .img{
-        width: 100%;
-       /*  display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 3rem; */
-
+       width: 100%;
     }
     #filter-nav{
         overflow-x: scroll;
@@ -193,10 +192,9 @@ footer .footer{
         background: var(--green);
         width: 100vw;
     }
-.point{
+    .point{
     display: none;
-}
-}
+}}
 
 @media screen and (max-width: 900px){
     .container-tech{
