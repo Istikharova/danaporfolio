@@ -4,9 +4,10 @@ body{
 }
 /* Section Abount me */
 .section-about-me{
-    display: flex;
-    justify-content: space-around;
-    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    display: grid;
+    /* display: flex;
+    justify-content: space-around; */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
    /*  grid-template-columns: repeat(3,1fr); */
     gap: 5rem;
     width: 90%;
@@ -20,7 +21,7 @@ body{
 .my-daten{
     display: grid;
     gap: 1rem;
-    width: 465px;
+    /* width: 465px; */
 }
 .my-daten .hobbies{
     display: flex;
@@ -44,8 +45,8 @@ body{
     cursor: pointer;
 }
 .section-about-me .my-daten img{
-    width: 63px;
-    height: 63px;
+    width: 62px;
+    height: 62px;
     padding: 0.3rem;
 }
 /* email */
@@ -54,7 +55,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     background: var(--black);
     border-radius: 10px;
     
@@ -70,6 +71,11 @@ body{
 
 }
 
+.contact .email img{
+    width: 48px;
+    height: 48px;
+}
+
 /* me img */
 /* .img-me{
     align-items: center;
@@ -80,10 +86,10 @@ body{
     object-fit: cover;
 } */
 .img-me img{
-    width: 460px;
-    height: 460px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
+   width: 400px;
+    height: 400px;
+   border-radius: 10px;
+    box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1); 
 }
 /* .img-me,
 .my-daten,
