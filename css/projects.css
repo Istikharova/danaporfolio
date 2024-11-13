@@ -1,9 +1,7 @@
 body{
     background: var(--white);
 }
-/* .filter-nav-mobile{
-    display: none;
-} */
+
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
@@ -32,7 +30,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-
   }
   .section-projects #filter-nav > div{
     display: flex;
@@ -180,7 +177,8 @@ footer .footer{
         background: var(--green);
         width: 100vw;  
     }
-    .allProjects #filter-nav .stroke{
+    .section-projects #filter-nav .stroke,
+    .point{
         display: none;
     }
     .section-projects #filter-nav .point-li li{
@@ -199,9 +197,6 @@ footer .footer{
        width: 100%;
     }
   
-    .point{
-    display: none;
-}
 }
 
 @media screen and (max-width: 900px){
