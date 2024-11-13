@@ -73,12 +73,12 @@ body{
     box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
     object-fit: cover;
 }
-.img-me img,
+/* .img-me,
 .my-daten,
 .about-me{
     width: 500px;
     height: 500px;
-}
+} */
 .hobbies .container-icon {
     opacity: 0;
 }
