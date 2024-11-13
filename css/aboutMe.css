@@ -5,11 +5,10 @@ body{
 /* Section Abount me */
 .section-about-me{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 6rem;
-    margin: 10rem auto;  
-    align-items: center; 
+    width: 90%;
+    margin: 10rem auto;
 } 
 .about-me p{
     margin-top: 3rem;
