@@ -4,12 +4,13 @@ body{
 }
 /* Section Abount me */
 .section-about-me{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    /* grid-template-columns: repeat(3,1fr); */
+    display: flex;
+    justify-content: space-around;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+   /*  grid-template-columns: repeat(3,1fr); */
     gap: 5rem;
     width: 90%;
-    margin: 10rem auto;
+    margin: 10rem auto; 
 } 
 .about-me p{
     margin-top: 3rem;
@@ -19,6 +20,7 @@ body{
 .my-daten{
     display: grid;
     gap: 1rem;
+    width: 465px;
 }
 .my-daten .hobbies{
     display: flex;
@@ -78,8 +80,8 @@ body{
     object-fit: cover;
 } */
 .img-me img{
-    width: 500px;
-    height: 500px;
+    width: 460px;
+    height: 460px;
     border-radius: 10px;
     box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
 }
