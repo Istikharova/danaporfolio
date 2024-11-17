@@ -180,19 +180,21 @@ footer .footer{
 }
 
 /* media-querie */
-@media screen and (max-width: 1200px) {
-    header {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
 
+@media screen and (max-width: 1400px){
+    .container-skills {
+        grid-template-columns: repeat(2,1fr);
     }
-    header .imgDiv{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
+
+} 
+@media screen and (max-width: 900px){
+    .container-skills {
+        
+        grid-template-columns: 1fr;
+        
     }
-  }
-  
+
+}
 @media screen and (max-width:  700px) {
     .container-about-me{
         padding-bottom: 2rem;
