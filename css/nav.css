@@ -58,6 +58,7 @@ header p{
 .burger-icon.active .burger-bar:nth-child(1) {
   transform: rotate(45deg);
   position: relative;
+  background: var(--black);
   top: 7px;
 }
 
@@ -68,9 +69,35 @@ header p{
 .burger-icon.active .burger-bar:nth-child(3) {
   transform: rotate(-45deg);
   position: relative;
+  background: var(--black);
   top: -7px;
 }
 
+
+/* fade animation */
+.fade {
+	animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	        animation-duration: 1.5s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0
+	} to {
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0
+	} to {
+		opacity: 1
+	}
+}
 
 /* media queries */
 @media screen and (max-width: 1730px){
@@ -96,18 +123,29 @@ header p{
 
 @media screen and (max-width: 500px) {
   .container-nav ul {
-    display: none;
-    width: 100%;
+    visibility: none; 
+    opacity: 0; 
+    pointer-events: none;
+    width: 90%;
+    height: 90vh;
+    border-radius: 20px;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 2.5em;
     position: absolute;
     top: 150px;
+    margin: 1.5rem;
     left: 0;
     z-index: 10;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
   }
 
   .container-nav ul.show {
     display: flex;
+    visibility: visible;
+    opacity: 1; 
+    transition: opacity 0.5s ease, visibility 0s;
   }
 
   .burger-icon {
