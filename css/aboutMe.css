@@ -226,6 +226,7 @@ footer .footer{
 @media screen and (max-width: 500px){
     .section-about-me{
         width: 90%;
+        margin-top: 2rem;
     }
     .hobbies .container-icon img{
         width: 48px;

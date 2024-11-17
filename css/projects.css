@@ -1,8 +1,6 @@
 body{
     background: var(--white);
 }
-
-  
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--black); 
@@ -26,11 +24,7 @@ body{
     height: 30px;
     border-radius: 100%;
   }
-  .section-projects #filter-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
+
   .section-projects #filter-nav > div{
     display: flex;
     flex-direction: column;
@@ -57,12 +51,14 @@ body{
     width: 90%;
     margin: 0 auto;
 }
-
+.container-projects > h3{
+    margin: 5rem 0;
+}
 
 .container-projects .projects{
     display: flex;
     gap: 5rem;
-    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .container-projects .projects:nth-of-type(even) {
@@ -131,7 +127,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 footer .footer{
     background: var(--green);
@@ -213,5 +209,30 @@ footer .footer{
         justify-content: flex-start;
        
     }
+    .container-projects .projects{
+        margin-bottom: 3rem;
+    }
+    footer{
+        padding-top: 5rem;
+
+    }
+ 
+}
+
+@media screen and (max-width: 500px){
+    .section-projects #filter-nav{
+        justify-content: flex-start;
+       
+    }
+  
+    .container-projects > h3{
+        margin: 3rem 0;
+        text-align: center;
+    }
+    footer{
+        padding-top: 3rem;
+
+    }
+    
  
 }

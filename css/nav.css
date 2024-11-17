@@ -8,10 +8,10 @@ header{
   margin: auto;
 }
 
-.nav-container{
+.container-nav{
   display: flex;
 }
-.nav-container ul {
+.container-nav ul {
   width: 100%;
   display: flex;
   justify-content: center; 
@@ -39,7 +39,15 @@ header p{
 
 
 /* media queries */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1730px){
+  header{
+   display: flex;
+   justify-content: space-between;
+  } 
+
+
+}
+@media screen and (max-width: 820px) {
   header{
     display: flex;
     flex-direction: column;
@@ -50,6 +58,7 @@ header p{
   header .socialMedia{
     display: flex;
 } 
+
 
 
 }

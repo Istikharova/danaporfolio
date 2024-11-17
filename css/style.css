@@ -73,6 +73,9 @@ h1 {
 h2{
   font-size: 3em;
 }
+h3{
+  font-size: 2.5em;
+}
 p {
   color: var(--black);
   font-weight: 200;
@@ -155,13 +158,37 @@ nav .socialMedia .icon {
 
  @media screen and (max-width: 500px){
   h1{
-    font-size: 5em;
+    font-size: 4.5em;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
   }
   h2{
     font-size: 2em;
   }
+  h3{
+    font-size: 1.5em;
+  }
   p{
     font-size: 1.3em;
+  }
+
+} 
+@media screen and (max-width: 350px){
+  h1{
+    font-size: 3em;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  h2{
+    font-size: 1.7em;
+  }
+  h3{
+    font-size: 1em;
+  }
+  p{
+    font-size: 1em;
   }
 
 } 
