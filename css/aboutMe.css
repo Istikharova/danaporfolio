@@ -116,8 +116,7 @@ body{
 /* section über mich */
 .section-skills{
     background: var(--black);
-    padding: 5rem 0; 
-    width: 100vw; 
+    padding: 5rem 0;
 }
 .container-skills {
     width: 90%;
@@ -225,3 +224,23 @@ footer .footer{
     }
 
 }
+@media screen and (max-width: 500px){
+    .section-about-me{
+        width: 90%;
+    }
+
+    .contact{
+        padding: 0.5rem;
+    }
+    .hobbies .container-icon img{
+        width: 48px;
+        height: 48px;
+    }
+    .contact .email img{
+        display: none;
+    }
+
+    .contact .email p{
+        font: 1em;
+    }
+  }
