@@ -9,7 +9,7 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5rem;
     width: 90%;
-    margin: 10rem auto; 
+    margin: 5rem auto; 
 } 
 .about-me p{
     margin-top: 3rem;
@@ -222,15 +222,10 @@ footer .footer{
         width: 32px;
         height: 32px;
     }
-
 }
 @media screen and (max-width: 500px){
     .section-about-me{
         width: 90%;
-    }
-
-    .contact{
-        padding: 0.5rem;
     }
     .hobbies .container-icon img{
         width: 48px;
@@ -242,5 +237,8 @@ footer .footer{
 
     .contact .email p{
         font: 1em;
+    }
+    .container-skills ul li{
+        font-size: 0.9em;
     }
   }

@@ -25,7 +25,7 @@ pointItems.forEach(item => {
     toggleDot(item);
 
     // Hole die zugehörige Kategorie aus dem li-Element (z.B. 'all', 'webdesign', etc.)
-    const category = item.querySelector('li').classList[1]; // Die zweite Klasse des li-Elements gibt die Kategorie an
+    const category = item.querySelector('.list-category').classList[2]; // Die zweite Klasse des li-Elements gibt die Kategorie an
 
     // Zeige die entsprechende Projekt-Kategorie an
     showProjects(category);

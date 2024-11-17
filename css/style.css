@@ -71,7 +71,7 @@ h1 {
   text-transform: uppercase;
 }
 h2{
-  font-size: 2em;
+  font-size: 3em;
 }
 p {
   color: var(--black);
@@ -158,10 +158,10 @@ nav .socialMedia .icon {
     font-size: 5em;
   }
   h2{
-    font-size: 1.5em;
+    font-size: 2em;
   }
   p{
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
 } 
