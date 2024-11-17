@@ -39,7 +39,7 @@ header p{
 
 
 /* media queries */
-@media screen and (max-width: 1730px){
+@media screen and (max-width: 1400px){
   header{
    display: flex;
    justify-content: space-between;
