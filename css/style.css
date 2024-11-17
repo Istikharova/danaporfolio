@@ -70,7 +70,9 @@ h1 {
   font-weight: 400;
   text-transform: uppercase;
 }
-
+h2{
+  font-size: 2em;
+}
 p {
   color: var(--black);
   font-weight: 200;

@@ -5,10 +5,7 @@ body{
 /* Section Abount me */
 .section-about-me{
     display: grid;
-    /* display: flex;
-    justify-content: space-around; */
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-   /*  grid-template-columns: repeat(3,1fr); */
     gap: 5rem;
     width: 90%;
     margin: 10rem auto; 
@@ -21,7 +18,6 @@ body{
 .my-daten{
     display: grid;
     gap: 1rem;
-    /* width: 465px; */
 }
 .my-daten .hobbies{
     display: flex;
@@ -128,14 +124,14 @@ body{
     display: grid;
     align-items: center;
     gap: 2rem;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 10rem 1fr 1fr 1fr;
     background: var(--black);
 }
 .container-skills div{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 2rem;
     border-radius: 10px;
     background: linear-gradient(47deg, rgba(246, 253, 253, 0.1) -92.29%, rgba(14, 29, 51, 0.34) 76.88%);
     box-shadow: 0px 4px 47.7px -3px rgba(0, 0, 0, 0.25);
@@ -165,9 +161,7 @@ body{
     color: var(--white);
     font-size: 1.7em;
 }
-.container-my-skills .container h3{
-    color: var(--green);
-}
+
 
 /* footer */
 footer{
