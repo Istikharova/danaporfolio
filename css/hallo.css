@@ -48,8 +48,6 @@ main .main p{
     object-fit: contain;
   }
   
-
-
 /* media queries */
 @media screen and (max-width: 920px) {
     main {
