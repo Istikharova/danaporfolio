@@ -51,7 +51,6 @@ main .main p{
 /* media queries */
 @media screen and (max-width: 920px) {
     main {
-    height: 95vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     }
@@ -62,7 +61,8 @@ main .main p{
     flex-direction: column;
     }
     main .main{
-        padding: 4rem 3rem;
+        height: 90vh;
+        padding: 3rem;
     }
   }
 
