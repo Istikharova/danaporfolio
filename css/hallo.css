@@ -53,7 +53,6 @@ main .main p{
 /* media queries */
 @media screen and (max-width: 920px) {
     main {
-    height: 50%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     }
@@ -62,6 +61,9 @@ main .main p{
     }
     .btn-container{
     flex-direction: column;
+    }
+    main .main{
+        padding: 3rem;
     }
   }
 
