@@ -61,7 +61,7 @@ main .main p{
     flex-direction: column;
     }
     main .main{
-        height: 90vh;
+        height: 80vh;
         padding: 3rem;
     }
   }
