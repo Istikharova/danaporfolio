@@ -63,20 +63,20 @@ body{
 .bg-black{
   background: var(--black);
   padding-top: 7rem;
+  margin-bottom: 5rem;
 }
 .card-gradient-black{
   border-radius: 10px;
   background: linear-gradient(47deg, rgba(246, 253, 253, 0.1) -92.29%, rgba(14, 29, 51, 0.34) 76.88%);
   box-shadow: 0px 4px 47.7px -3px rgba(0, 0, 0, 0.25);
   color: var(--white);
- /*  height: 100%; */
   padding: 3rem ;
 }
 .card-white{
   border-radius: 10px;
   box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
   border-radius: 10px;
-  padding: 2rem 0; 
+  padding: 3rem 3rem; 
 
 }
 
@@ -97,17 +97,21 @@ h1 {
   color: var(--opagreen);
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 3rem;
 }
 h2{
   font-size: 3em;
+  margin-bottom: 3rem;
 }
 h3{
   font-size: 2.5em;
+  margin-bottom: 1rem;
 }
 h4{
   font-size: 2em;
   text-transform: uppercase;
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 p{
   color: var(--black);
@@ -195,7 +199,6 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5rem;
 }
 footer .footer{
   background: var(--green);

@@ -7,11 +7,8 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5rem;
+    padding-top: 7rem;
 } 
-.about-me p{
-    margin-top: 3rem;
-    
-}
 /* Section meine Daten */
 .my-daten{
     display: grid;
@@ -51,6 +48,12 @@ body{
     border-radius: 10px;
     
 }
+.contact>p{
+    color: var(--green);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+}
 .contact .email{
     display: flex;
     align-items: center;
@@ -59,7 +62,6 @@ body{
 }
 .contact .email p{
     color: var(--white);
-
 }
 
 .contact .email img{
@@ -180,7 +182,6 @@ body{
     }
     .img-me {
         justify-content: center;
-        
     }
    
 
@@ -188,7 +189,6 @@ body{
 @media screen and (max-width: 900px){
     .container-skills {
         grid-template-columns: 1fr;
-        
     }
     .contact .email img{
         width: 32px;

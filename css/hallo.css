@@ -3,6 +3,9 @@ main{
   grid-template-columns: 2fr 3fr; 
   height: 100vh; 
 }
+main h1{
+  margin: 0;
+}
 main .main{
   display: flex;
   flex-direction: column;
@@ -14,7 +17,6 @@ main .main{
 main .main p{
   font-size: 1.5em;
   padding-bottom: 4rem;
-  padding-top: 2rem;
 }
 .btn-container{
   display: flex;

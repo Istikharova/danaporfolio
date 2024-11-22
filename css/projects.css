@@ -9,7 +9,7 @@ body{
 .section-projects #filter-nav{
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .section-projects .point{
     width: 30px;
@@ -40,9 +40,7 @@ body{
 .allProjects{
     padding-top: 0;
 } 
-.container-projects > h3{
-    margin: 5rem 0;
-}
+
 .container-projects .projects{
     display: flex;
     gap: 5rem;
@@ -55,10 +53,8 @@ body{
     width: 50%;
 }
 .container-projects .projects img{
-    box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
     width: 100%;
-    /* height: 100%; */
-    border-radius: 10px;
+
 }
 .container-discription{
     display: flex;
