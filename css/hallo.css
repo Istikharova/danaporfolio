@@ -1,79 +1,72 @@
 main{
-    display: grid;
-    grid-template-columns: 2fr 3fr; 
-    height: 100vh; 
+  display: grid;
+  grid-template-columns: 2fr 3fr; 
+  height: 100vh; 
 }
 main .main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--white);
-    padding: 6rem;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+  padding: 6rem;
 }
 main .main p{
-    font-size: 1.5em;
-    padding-bottom: 4rem;
-    padding-top: 2rem;
+  font-size: 1.5em;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
 }
 .btn-container{
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
 /* section bubble */
 .section-bubble {
-    background: var(--black);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .bubble {
-    position: absolute;
-    border-radius: 100%;
-    background: linear-gradient(
-      178.22deg,
-      #45a49d 8.65%,
-      #40b8a2 40.66%,
-      #75d6ad 78.96%
-    );
-    box-shadow: inset 0px 4px 10px rgba(69, 164, 157, 0.2);
-    animation: bounce 2s infinite;
-  }
-  
-  .bubble img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-  }
-  
+  background: var(--black);
+  position: relative;
+  overflow: hidden;
+}
+.bubble {
+  position: absolute;
+  border-radius: 100%;
+  background: linear-gradient(
+    178.22deg,
+    #45a49d 8.65%,
+    #40b8a2 40.66%,
+    #75d6ad 78.96%
+  );
+  box-shadow: inset 0px 4px 10px rgba(69, 164, 157, 0.2);
+  animation: bounce 2s infinite;
+}
+.bubble img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
 /* media queries */
 @media screen and (max-width: 920px) {
-    main {
+  main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    }
-    .section-bubble{
-        height: 100vh;
-    }
-    .btn-container{
-    flex-direction: column;
-    }
-    main .main{
-        height: 80vh;
-        padding: 3rem;
-    }
   }
-
-  @media screen and (max-width: 500px){
-    h1{
-      font-size: 5em;
-      line-height: 30px;
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
-
-  
-  } 
-
+  .section-bubble{
+    height: 100vh;
+  }
+  .btn-container{
+    flex-direction: column;
+  }
+  main .main{
+    height: 80vh;
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 500px){
+  h1{
+    font-size: 5em;
+    line-height: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+} 

@@ -4,28 +4,19 @@ body{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--black); 
-  }
- .section-projects #filter-nav{
+}
+
+.section-projects #filter-nav{
     display: flex;
     justify-content: center;
     margin-top: 5rem;
-    
-  } 
-  .section-projects .title-header{
-    background: var(--black);
-  }
-  .section-projects .title-header .container-title{
-    width: 90%;
-    margin: auto;
-    padding: 5rem 0;
-  }
-  .section-projects .point{
+}
+.section-projects .point{
     width: 30px;
     height: 30px;
     border-radius: 100%;
-  }
-
-  .section-projects #filter-nav > div{
+}
+.section-projects #filter-nav > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,22 +36,18 @@ body{
     border-radius: 50px;
 }
 
-
 /* section projekte */
 .allProjects{
-    width: 90%;
-    margin: 0 auto;
-}
+    padding-top: 0;
+} 
 .container-projects > h3{
     margin: 5rem 0;
 }
-
 .container-projects .projects{
     display: flex;
     gap: 5rem;
     margin-bottom: 10rem;
 }
-
 .container-projects .projects:nth-of-type(even) {
     flex-direction: row-reverse;
 }
@@ -73,23 +60,19 @@ body{
     /* height: 100%; */
     border-radius: 10px;
 }
-
-
- .container-discription{
+.container-discription{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     /* align-self: center; */
     width: 50%;
 } 
-
 .container-tech{
     display: grid;
     grid-template-columns: repeat(2,1fr); 
     padding: 2rem 0;
     gap: 2rem;
 }
-
 .container-tech ul{
    padding-left: 1.5rem;
    padding-top:1rem ;
@@ -98,12 +81,9 @@ body{
 .container-tech ul li{
     list-style: disc;
 }
-
-
 .container-tech a{
     align-self: flex-end;
 }
-
 
 .container-discription h3{
     font-size: 2em;
@@ -112,29 +92,11 @@ body{
 .container-discription h4{
     font-weight: 500; 
 }
-
 .container-tech h4{
     font-size: 1.5em;
 }
-
 .container-tech ul li{
     font-size: 1.3em;
-}
-
-/* footer */
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5rem;
-}
-footer .footer{
-    background: var(--green);
-    height: 3px;
-    width: 90%;
-    margin: 2rem;
-    border-radius: 3px;
 }
 
 /* fade animation */
@@ -153,7 +115,6 @@ footer .footer{
 		opacity: 1
 	}
 }
-
 @-webkit-keyframes fade {
 	from {
 		opacity: 0
@@ -161,7 +122,6 @@ footer .footer{
 		opacity: 1
 	}
 }
-
 /* media-queries */
 @media screen and (max-width: 1200px) {
     .section-projects #filter-nav{
@@ -229,10 +189,5 @@ footer .footer{
         margin: 3rem 0;
         text-align: center;
     }
-    footer{
-        padding-top: 3rem;
-
-    }
-    
  
 }

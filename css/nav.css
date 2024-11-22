@@ -3,23 +3,24 @@ header{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   background: var(--white);
-  padding: 3rem 0;
   width: 90%;
   margin: auto;
+  padding: 3rem 0;
 }
-
 .container-nav{
   display: flex;
+  justify-content: center;
 }
-.container-nav ul {
+.container-nav-li{
+  display: flex;
+}
+.container-nav-li ul {
   width: 100%;
   display: flex;
   justify-content: center; 
   border-radius: 50px;
   text-align: center;
-  padding: 16px 20px;
-} 
-
+}
 header ul li a {
     color: var(--black);
     font-size: 0.9em;
@@ -27,11 +28,11 @@ header ul li a {
     margin: 1rem;
     z-index: 10;
 }
-
 header .socialMedia{
     display: flex;
+    justify-content: center;
+    align-items: center;
 } 
-
 header p{
     font-size: 2em;
     align-self: center;
@@ -49,7 +50,6 @@ header p{
   border-radius: 100%;
   cursor: pointer;
 }
-
 .burger-bar {
   width: 25px;
   height: 3px;
@@ -61,11 +61,9 @@ header p{
   background: var(--black);
   top: 2px;
 }
-
 .burger-icon.nav-active .burger-bar:nth-child(2) {
   display: none;
 }
-
 .burger-icon.nav-active .burger-bar:nth-child(3) {
   transform: rotate(-45deg);
   position: relative;
@@ -74,13 +72,16 @@ header p{
 }
 
 /* media queries */
+@media screen and (min-width: 1950px){
+  header{
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1730px){
   header{
    display: flex;
    justify-content: space-between;
-  } 
-
-
+  }
 }
 @media screen and (max-width: 820px) {
   header{
@@ -94,7 +95,6 @@ header p{
     display: flex;
   } 
 }
-
 @media screen and (max-width: 500px) {
   .container-nav ul {
     visibility: none; 
@@ -114,7 +114,6 @@ header p{
     z-index: 10;
     transition: opacity 0.5s ease, visibility 0s 0.5s;
   }
-
   .container-nav ul.nav-show {
     display: flex;
     visibility: visible;
@@ -122,7 +121,6 @@ header p{
     opacity: 1; 
     transition: opacity 0.5s ease, visibility 0s;
   }
-
   .burger-icon {
     display: flex;
   }

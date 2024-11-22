@@ -1,6 +1,5 @@
 
 body{
-    background: var(--white);
     overflow-x: hidden;
 }
 /* Section Abount me */
@@ -8,8 +7,6 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5rem;
-    width: 90%;
-    margin: 5rem auto; 
 } 
 .about-me p{
     margin-top: 3rem;
@@ -26,10 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 2rem 0; 
     width: 100%;
-    box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
-    border-radius: 10px;
 }
 /* box meine daten */
 .section-about-me .my-daten button{
@@ -92,7 +86,7 @@ body{
 /* icons open */
 .hobbies  .container-icon.active {
     opacity: 1;
-    /* transform: scale(2); */
+    transform: scale(1.2);
 }
 
 /* icons open animation*/
@@ -114,33 +108,20 @@ body{
 }
 
 /* section über mich */
-.section-skills{
-    background: var(--black);
-    padding: 5rem 0;
-}
+
 .container-skills {
-    width: 90%;
-    margin: auto;
     display: grid;
     align-items: center;
     gap: 2rem;
     grid-template-columns: 10rem 1fr 1fr 1fr;
-    background: var(--black);
 }
 .container-skills div{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    border-radius: 10px;
-    background: linear-gradient(47deg, rgba(246, 253, 253, 0.1) -92.29%, rgba(14, 29, 51, 0.34) 76.88%);
-    box-shadow: 0px 4px 47.7px -3px rgba(0, 0, 0, 0.25);
-    color: var(--white);
-    min-height: 200px;
     font-size: 1.5em;
-
 }
-
 .container-skills .icon{
     width: 63px;
     height: 63px;
@@ -163,23 +144,13 @@ body{
 }
 
 
-/* footer */
-footer{
-    background: var(--black);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-footer .footer{
-    background: var(--green);
-    height: 3px;
-    width: 80%;
-    margin: 2rem;
-    border-radius: 3px;
-}
-
 /* media-querie */
+@media screen and (min-width: 1950px){
+    .container-skills div{
+        font-size: 2rem;
+    }
+    
+}
 
 @media screen and (max-width: 1400px){
     .container-skills,
