@@ -121,6 +121,7 @@ body{
     align-items: center;
     gap: 2rem;
     font-size: 1.5em;
+    height: 100%;
 }
 .container-skills .icon{
     width: 63px;
