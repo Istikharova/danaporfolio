@@ -195,11 +195,16 @@ body{
         height: 32px;
     }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .section-about-me{
         width: 90%;
-        margin-top: 2rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
     }
+
+}
+@media screen and (max-width: 500px){
+  
     .hobbies .container-icon img{
         width: 48px;
         height: 48px;
