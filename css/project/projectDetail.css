@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
-    /* justify-content: space-between; */
 }
 
 .content-info h1 {
@@ -26,9 +25,14 @@
     font-weight: 500;
     text-transform: uppercase;
 }
+.info-box ul{
+    margin-left: 2rem;
+
+}
 .info-box ul li{
     font-size: 1.5em;
     font-weight:200;
+    list-style-type:disc;
 }
 
 .section-info .text-img{
@@ -52,6 +56,9 @@
     overflow-x: auto;
     padding-bottom: 2rem;
 }
+.container-content .card-title p{
+    padding-bottom: 2rem;
+}
 
 .card-gradient-green{
     border-radius: 10px;
@@ -71,12 +78,21 @@
 .more-project-title a{
     color: var(--black);
     font-size: 1.5em;
-    transition: transform 0.2s ease;
+    transition: transform 0.5s ease;
     
+}
+.link-file{
+    color: var(--green);
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: inline-block
 }
 .more-project-title a:hover,
 .card-gradient-green:hover,
-.img-card:hover
+.img-card:hover,
+.link-file:hover
 {
     transform: scale(0.97);
 }

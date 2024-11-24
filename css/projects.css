@@ -85,7 +85,7 @@ body{
     font-size: 1.3em;
 }
 
-/* fade animation */
+/* fade animation*/
 .fade {
 	animation-name: fade;
 	-webkit-animation-duration: 1.5s;
