@@ -228,6 +228,7 @@ footer .footer{
   }
 }
 
+
 @media screen and (max-width: 950px){
   .card-white{
     padding: 1.5rem;
@@ -248,10 +249,13 @@ footer .footer{
   h2{
     font-size: 2em;
   }
-  h3,
-  h4{
+  h3{
     font-size: 1.5em;
   }
+  h4{
+    font-size: 1em;
+  }
+
   p{
     font-size: 1.3em;
   }

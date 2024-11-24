@@ -176,6 +176,12 @@
     border-radius:100%;
   }
 /* media quaries */
+@media screen and (max-width: 1760px){
+    .section-info .text-img{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  
 @media screen and (max-width: 1200px){
     .section-info .text-img{
         grid-template-columns: 1fr;
