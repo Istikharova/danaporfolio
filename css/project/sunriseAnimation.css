@@ -3,16 +3,16 @@
     grid-template-columns: repeat(3, 1fr);
 }
 .card-one .img-one{
-    background-image: url(../../img/project/mugsch/sunrise-animation/skizze_sunrise.webp);
+    background-image: url(../../img/project/sunrise-animation/skizze_sunrise.webp);
 }
 .card-one .img-two{
-    background-image: url(../../img/project/mugsch/sunrise-animation/skizze_sunrise_2.webp);
+    background-image: url(../../img/project/sunrise-animation/skizze_sunrise_2.webp);
 }
 .card-two .img-card{
-    background-image: url(../../img/project/mugsch/sunrise-animation/sunrise_bilde_box.webp);
+    background-image: url(../../img/project/sunrise-animation/sunrise_bilde_box.webp);
 }
 .card-three .img-card{
-    background-image: url(../../img/project/mugsch/sunrise-animation/code_sunrise.webp);
+    background-image: url(../../img/project/sunrise-animation/code_sunrise.webp);
 }
 @media screen and (min-width: 1151px) and (max-width: 1600px){
     .card-one{
