@@ -1,12 +1,16 @@
+h1 span{
+    line-height: 100px;
+}
 .content-info{
-    display: flex;
-    justify-content: space-between; 
+    display: grid;
+    grid-template-columns: 30% 70%;
     gap: 5rem;
 }
+
 .content-info .container-info-box{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .content-info h1 {
@@ -17,7 +21,9 @@
     font-size: 3em;
 }
 .info-box{
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .info-box p{
     margin-bottom: 1rem;
@@ -60,9 +66,7 @@
 .container-content .card-title p{
     padding-bottom: 2rem;
 }
-.container-content .card-white{
-    padding: 3rem;
-  }
+
 
 .card-gradient-green{
     border-radius: 10px;
@@ -101,7 +105,6 @@
     transform: scale(0.97);
 }
 
-  
 /* grid template vorgehensweise  */
 .container-content{
     display: grid;
@@ -112,9 +115,9 @@
 }
 .card-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 5rem;
+    padding: 3rem;
 }
 .card-grid .img-card{
     position: relative;
@@ -183,18 +186,13 @@
 
 
 @media screen and (max-width: 1150px){
-    .content-info{
-        flex-direction: column;
-    }
-    .container-content{
+    .container-content,.content-info{
         grid-template-columns: 1fr;
-        
     }
-    .card-grid{
+    .container-content .card-grid{
         grid-template-columns: 1fr;
         grid-column:  1/span 2;
     }
-
 }
 @media screen and (max-width: 950px){
     .project-title{
@@ -202,7 +200,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
     .section-info .container-small-discription{
         grid-template-columns: 1fr;
@@ -210,6 +207,10 @@
 
 }
 @media screen and (max-width: 650px){
+    .container-content .card-grid{
+        gap: 2rem;
+        padding: 1.5rem;
+    }
     .content-info .container-info-box{
         grid-template-columns: 1fr;
     }
@@ -222,7 +223,6 @@
     .content-info h1 span{
         line-height: 60px;
       }
-
 }
 @media screen and (max-width: 415px){
     .content-info .container-info-box{
