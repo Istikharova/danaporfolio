@@ -70,7 +70,7 @@ body{
   border-radius: 10px;
   background: linear-gradient(47deg, rgba(246, 253, 253, 0.1) -92.29%, rgba(14, 29, 51, 0.34) 76.88%);
   color: var(--white);
-  padding: 3rem ;
+  padding: 3rem;
 }
 .card-white{
   border-radius: 10px;

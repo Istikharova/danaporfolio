@@ -59,6 +59,9 @@
 .container-content .card-title p{
     padding-bottom: 2rem;
 }
+.container-content .card-white{
+    padding: 3rem;
+  }
 
 .card-gradient-green{
     border-radius: 10px;
