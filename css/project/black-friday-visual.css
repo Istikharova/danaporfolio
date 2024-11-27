@@ -1,0 +1,25 @@
+.container-visual{
+    margin-bottom: 5rem;
+}
+
+.visual{
+    height: 30%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 5rem;
+}
+.visual video{
+
+    width: 100%;
+}
+@media screen and (max-width: 1180px){
+    .visual{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 950px){
+    .visual{
+        grid-template-columns: 1fr;
+    }
+  }
