@@ -20,7 +20,7 @@
   --white: #f6fdfd;
   --black: #0e1d33;
   --opagreen: rgba(64, 184, 162, 0.16);
-  --opablack: #0e1d33f7;
+  --opablack: linear-gradient(47deg, rgba(246, 253, 253, 0.1) -92.29%, rgba(14, 29, 51, 0.34) 76.88%);
 }
 
 /* Text markierung */
