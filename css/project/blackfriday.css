@@ -1,0 +1,12 @@
+.card-one{
+    grid-column: 1 / span 2;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card-one .img-one{
+    background-image: url(../../img/project/blackfriday/blackfriday_moodbaord.webp);
+}
+
+.card-two .img-card{
+    background-image: url(../../img/project/blackfriday/blackfriday_ideen.webp);
+}
+
