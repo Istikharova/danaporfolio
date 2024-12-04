@@ -2,7 +2,6 @@
 const navLinks = document.querySelectorAll('#main-nav ul li a');
 const currentPath = window.location.pathname;
 
-
 navLinks.forEach(link => {
   const linkPath = new URL(link.href).pathname;
   if (linkPath === currentPath) {
