@@ -1,6 +1,6 @@
 .card-grid{
     grid-template-columns: repeat(2, 1fr);
-}
+}  
 
 .container-content .card-one{
     grid-column: 1 / span 2;
@@ -29,6 +29,7 @@
 .card-three .img-card{
     background-image: url(../../img/project/mugsch/screendesign.png);
 }
+
 /* media Queries */
 @media screen and (max-width: 950px){
     .card-one .img-one{
