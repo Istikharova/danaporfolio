@@ -119,8 +119,13 @@ body{
 }
 
 /* media-querie */
+@media screen and (max-width: 1700px){
+    .container-skills {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+} 
 @media screen and (max-width: 1400px){
-    .container-skills,
     .section-about-me {
         grid-template-columns: repeat(2,1fr);
     }
