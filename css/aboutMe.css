@@ -117,35 +117,8 @@ body{
     gap: 2rem;
     grid-template-columns: 10rem 1fr 1fr 1fr;
 }
-.container-skills div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    height: 100%;
-}
-.container-skills .container-icon{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    align-items: flex-start;
-}
-.container-skills .container-icon img{
-    width: 48px;
-    height: 48px;
-}
-.container-skills .container-icon div{
-    width: 75px;
-    height: 75px;
-    background: var(--white);
-    border-radius: 50%;
-}
-
 
 /* media-querie */
-
-
 @media screen and (max-width: 1400px){
     .container-skills,
     .section-about-me {
