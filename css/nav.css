@@ -13,6 +13,7 @@ header{
 }
 .container-nav-li{
   display: flex;
+  gap: 0.5rem;
 }
 .container-nav-li ul {
   width: 100%;
@@ -32,10 +33,11 @@ header{
   color: var(--white);
   font-weight:500; 
 }
-header .socialMedia{
+.socialMedia{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
 } 
 header p{
     font-size: 2em;

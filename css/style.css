@@ -159,16 +159,21 @@ span{
   );
   box-shadow: inset 0px 4px 10px rgba(69, 164, 157, 0.2);
 }
-nav .socialMedia .icon {
-  margin-left: 0.5rem;
+
+.socialMedia .icon a{
   width: 48px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 /* btn */
 .socialMedia .icon img {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
+
 }
 .btn {
   display: inline-block;
@@ -224,6 +229,7 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 footer .footer{
   background: var(--green);
@@ -231,6 +237,14 @@ footer .footer{
   width: 90%;
   margin: 2rem;
   border-radius: 10px;
+}
+.container-footer{
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 0.7em;
+}
+.container-footer a{
+  color: var(--black);
 }
 
 @media screen and (min-width: 1950px){
