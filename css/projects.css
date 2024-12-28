@@ -50,15 +50,16 @@ body{
 .container-projects .projects:nth-of-type(even) {
     flex-direction: row-reverse;
 }
-.container-projects .projects .img{
+.container-projects .projects .container-img{
     width: 50%;
     position: relative;
     cursor: pointer;
 }
+
 .container-projects .projects .img-device{
     width: 100%;
 }
-.container-projects .img .tech{
+.container-projects .container-img .tech{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -69,7 +70,7 @@ body{
     opacity: 0;
     transition: 0.5s ease;
 }
-.container-projects .img .tech h4{
+.container-projects .container-img .tech h4{
     text-align: center;
     color: var(--white);
 }
@@ -83,31 +84,11 @@ body{
 .container-discription{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    /* align-self: center; */
+    justify-content: center;
     width: 50%;
+    gap: 5rem;
 } 
-.container-tech{
-    display: grid;
-    grid-template-columns: repeat(2,1fr); 
-    padding: 2rem 0;
-    gap: 2rem;
-}
-.container-tech ul{
-   padding-left: 1.5rem;
-   padding-top:1rem ;
-}
 
-.container-tech ul li{
-    list-style: disc;
-}
-.container-tech a{
-    align-self: flex-end;
-}
-
-.container-tech ul li{
-    font-size: 1.3em;
-}
 
 /* fade animation*/
 .fade {
@@ -160,23 +141,13 @@ body{
     .container-projects .projects .container-discription{
         width: 90%;
     }
-    .container-projects .projects .img{
+    .container-projects .projects .container-img{
        width: 100%;
     }
   
 }
 
-@media screen and (max-width: 900px){
-    .container-tech{
-        display: flex;
-        flex-direction: column;
-    } 
 
-   .container-tech a{
-       align-self: flex-start;
-    }
- 
-}
 @media screen and (max-width: 800px){
     .section-projects #filter-nav{
         justify-content: flex-start;
