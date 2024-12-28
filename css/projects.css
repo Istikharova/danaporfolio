@@ -10,6 +10,7 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
+    z-index: 1000;
 }
 .section-projects .point{
     width: 30px;
@@ -51,10 +52,33 @@ body{
 }
 .container-projects .projects .img{
     width: 50%;
+    position: relative;
+    cursor: pointer;
 }
-.container-projects .projects img{
+.container-projects .projects .img-device{
     width: 100%;
+}
+.container-projects .img .tech{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--opablack);
+    border-radius: 10px;
+    top: 0;
+    padding:3rem;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.container-projects .img .tech h4{
+    text-align: center;
+    color: var(--white);
+}
 
+.container-projects .tech .container-brand-icon{
+    margin-top: 4rem;
+}
+.container-projects .projects .tech:hover{
+    opacity: 1;
 }
 .container-discription{
     display: flex;
