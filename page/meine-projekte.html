@@ -66,22 +66,22 @@
         </div>
         <div id="filter-nav">
           <span class="stroke full"></span>
-          <div class="point-li"><div class="point full"></div><div class="activeGradient list-category all">Alle Projekte</div></div>
+          <div class="point-li"><div class="point full"></div><div data-category="all" class="activeGradient list-category all">Alle Projekte</div></div>
           <span class="stroke full"></span>
-          <div class="point-li"><div class="point ghost"></div><div class="activeGradient list-category webdesign two">Webdesign</div></div>
+          <div class="point-li"><div class="point ghost"></div><div data-category="webdesign" class="activeGradient list-category webdesign">Webdesign</div></div>
           <span class="stroke full"></span>
-          <div class="point-li"><div class="point ghost"></div><div class="activeGradient list-category webentwicklung">Webentwicklung</div></div>
+          <div class="point-li"><div class="point ghost"></div><div data-category="webentwicklung" class="activeGradient list-category webentwicklung">Webentwicklung</div></div>
           <span class="stroke full"></span>
-          <div class="point-li"><div class="point ghost"></div><div class="activeGradient list-category graphicdesign">UX-/Graphicdesign</div></div>
+          <div class="point-li"><div class="point ghost"></div><div data-category="graphicdesign"class="activeGradient list-category graphicdesign">UX-/Graphicdesign</div></div>
           <span class="stroke full"></span>
         </div>
 
       <div class="allProjects section-width">
        
 <!-- projecte -->
-        <div class="container-projects fade all">
+       <div data-category="all" class="container-projects fade all">
           <h2>Alle Projekte</h2>
-          <div class="projects wd">
+    <!--       <div class="projects wd">
             <div class="img">
               <img class="card-white img-device"
                 src="../img/mugsch_device.webp"
@@ -145,9 +145,9 @@
                 >
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
-        <div class="container-projects fade webdesign">
+        <div data-category="webdesign" class="container-projects fade webdesign">
           <h2>webdesign</h2>
           <div class="projects wd">
             <div class="img img-card">
@@ -205,7 +205,7 @@
             </div>
           </div>
         </div>
-        <div class="container-projects fade webentwicklung">
+        <div data-category="webentwicklung" class="container-projects fade webentwicklung">
           <h2>webentwicklung</h2>
           
           <div class="projects">
@@ -279,7 +279,7 @@
           </div>
 
         </div>
-        <div class="container-projects fade graphicdesign">
+        <div data-category="graphicdesign" class="container-projects fade graphicdesign">
           <h2>UX-/Graphicdesign</h2>
           <div class="projects wd">
             <div class="img">
@@ -399,7 +399,7 @@
       <div class="footer"></div>
     </footer>
     <script src="../js/nav.js"></script>
-    <script src="../js/projects.js"></script>
+    <script src="../js/project.js"></script>
     <script src="../js/textAnimation.js"></script>
   </body>
 </html>
