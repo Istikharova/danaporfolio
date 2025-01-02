@@ -146,6 +146,18 @@ span{
 }
 
 /* icons */
+.icon-size-xs{
+  width: 16px;
+  height: 16px;
+}
+.icon-size-s{
+  width: 32px;
+  height: 32px;
+}
+.icon-size-m{
+  width: 48px;
+  height: 48px;
+}
 .bubble {
   display: flex;
   justify-content: center;
@@ -166,15 +178,9 @@ span{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 /* btn */
-.socialMedia .icon img {
-  width: 32px;
-  height: 32px;
-
-}
 .btn {
   display: inline-block;
   text-align: center;
@@ -239,14 +245,22 @@ footer .footer{
   border-radius: 10px;
 }
 .container-footer{
-  text-align: center;
-  padding-bottom: 2rem;
-  font-size: 0.7em;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8em;
 }
 .container-footer a{
   color: var(--black);
+  font-size: 1.5em;
 }
-
+.footer-mail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
 @media screen and (min-width: 1950px){
   .section-width{
     width: 80%;

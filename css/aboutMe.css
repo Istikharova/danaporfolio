@@ -31,11 +31,7 @@ body{
     font-weight: 500;
     cursor: pointer;
 }
-.section-about-me .my-daten img{
-    width: 62px;
-    height: 62px;
-    padding: 0.3rem;
-}
+
 /* email */
 .contact{
     display: flex;
@@ -56,16 +52,11 @@ body{
 .contact .email{
     display: flex;
     align-items: center;
+    gap: 0.5rem;
     box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
-    
 }
 .contact .email p{
     color: var(--white);
-}
-
-.contact .email img{
-    width: 48px;
-    height: 48px;
 }
 
 /* me img */
@@ -82,12 +73,14 @@ body{
 }
 
 .hobbies .container-icon {
+    display: flex;
+    gap:1rem;
     opacity: 0;
 }
 /* icons open */
-.hobbies  .container-icon.active {
+.hobbies .container-icon.active {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 /* icons open animation*/
@@ -118,7 +111,7 @@ body{
 }
 
 /* media-querie */
-@media screen and (max-width: 1700px){
+@media screen and (max-width: 2870px){
     .container-skills {
         grid-template-columns: repeat(2,1fr);
     }
