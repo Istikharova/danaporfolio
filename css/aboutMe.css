@@ -40,8 +40,7 @@ body{
     align-items: center;
     padding: 1rem;
     background: var(--black);
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 .contact>p{
     color: var(--green);
@@ -102,21 +101,20 @@ body{
 }
 
 /* section skills */
-
-.container-skills {
+.section-skills {
     display: grid;
     align-items: center;
     gap: 2rem;
     grid-template-columns: 10rem 1fr 1fr 1fr;
 }
 
-/* media-querie */
-@media screen and (max-width: 2870px){
-    .container-skills {
+/* media-queries */
+@media screen and (max-width: 1450px){
+    .section-skills{
         grid-template-columns: repeat(2,1fr);
     }
-
 } 
+
 @media screen and (max-width: 1400px){
     .section-about-me {
         grid-template-columns: repeat(2,1fr);
@@ -130,8 +128,8 @@ body{
     .img-me{
         justify-content: flex-start;
     }
-
 } 
+
 @media screen and (max-width: 1100px){
     .section-about-me .about-me{
         grid-column-end: 2;
@@ -147,16 +145,17 @@ body{
     .section-about-me .my-daten button{
         margin-top: 1.5rem;
     }
-   
-
 }
 @media screen and (max-width: 900px){
-    .container-skills {
+    .section-skills {
         grid-template-columns: 1fr;
     }
     .contact .email img{
         width: 32px;
         height: 32px;
+    }
+    .section-skills h4{
+        text-align: center;
     }
 }
 @media screen and (max-width: 600px){
@@ -165,10 +164,8 @@ body{
         margin-top: 1rem;
         padding-top: 1rem;
     }
-
 }
 @media screen and (max-width: 500px){
-  
     .hobbies .container-icon img{
         width: 48px;
         height: 48px;
@@ -176,8 +173,7 @@ body{
     .contact .email img{
         display: none;
     }
-
     .contact .email p{
         font: 1em;
     }
-  }
+}

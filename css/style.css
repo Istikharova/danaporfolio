@@ -110,7 +110,7 @@ h4{
   font-size: 1.7em;
   text-transform: uppercase;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 p{
   color: var(--black);
@@ -133,30 +133,6 @@ span{
   display: inline-block
 }
 
-/* brand icon */
-.container-brand-icon{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  gap: 20px;
-
-  
-}
-.container-brand-icon img{
-  width: 48px;
-  height: 48px;
-} 
-.container-brand-icon div{
-  display: flex;
-  width: 80px;
-  height: 80px;
-  background: var(--white);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-}
-
-
 /* icons */
 .icon-size-xs{
   width: 16px;
@@ -170,6 +146,25 @@ span{
   width: 48px;
   height: 48px;
 }
+
+/* brand icon */
+.container-brand-icon{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+.container-brand-icon div{
+  display: flex;
+  width: 80px;
+  height: 80px;
+  background: var(--white);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
 .bubble {
   display: flex;
   justify-content: center;
@@ -330,6 +325,14 @@ footer .footer{
   .bg-black{
     padding-top: 5rem;
     margin-bottom: 3rem;
+  }
+  .icon-size-m{
+    width: 32px;
+    height: 32px;
+  }
+  .container-brand-icon div{
+    width: 60px;
+    height: 60px;
   }
   footer{
     padding-top: 1rem;

@@ -4,13 +4,11 @@
     grid-template-columns: 30% 70%;
     gap: 5rem;
 }
-
 .content-info .container-info-box{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
-
 .content-info h1 {
     font-size: 2em;
     margin-bottom: 5rem;
@@ -35,7 +33,6 @@
 .card-grid ul{
     padding-bottom: 2rem;
 }
-
 .info-box ul li, .card-grid ul li{
     font-size: 1.3em;
     list-style-type:disc !important;
@@ -46,8 +43,6 @@
 .card-grid .card-title-ul{
     padding-bottom: 0;
 }
-
-
 .section-info .container-small-discription{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -61,7 +56,6 @@
 .section-info .container-small-discription h2{
     align-self: center;
 }
-
 .container-more-project,
 .project-card{
     display: flex;
@@ -74,8 +68,6 @@
 .container-content .card-title p{
     padding-bottom: 2rem;
 }
-
-
 .card-gradient-green{
     border-radius: 10px;
     display: flex;
@@ -95,8 +87,6 @@
     font-size: 1.5em;
     
 }
-
-
 .card-gradient-green:hover,
 .img-card:hover,
 .link-file:hover
@@ -129,8 +119,6 @@
     transition: transform 0.2s ease;
 } 
 
-
-
 /* img full size */
 /* Modal Styling */
 
@@ -141,12 +129,6 @@
     right: 10px;
     width: 32px;
     height: 32px;
-    background-image: url('../../img/icons/github.svg'); /* Pfad zur SVG-Datei */
-    background-size: cover;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    background:  var(--green);
-    border-radius: 50%;
   }
 
 .modal {
@@ -174,7 +156,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 1em;
+    font-size: 20px;
     color: var(--black);
     width: 32px;
     height: 32px;
@@ -182,9 +164,8 @@
     background: var(--green);
     border-radius:100%;
   }
+
 /* media quaries */
-
-
 @media screen and (max-width: 1150px){
     .container-content,.content-info{
         grid-template-columns: 1fr;
