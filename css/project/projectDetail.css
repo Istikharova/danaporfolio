@@ -95,14 +95,7 @@
     font-size: 1.5em;
     
 }
-.link-file{
-    color: var(--green);
-    font-size: 1.5rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    display: inline-block
-}
+
 
 .card-gradient-green:hover,
 .img-card:hover,
