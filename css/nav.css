@@ -34,12 +34,6 @@ header{
   color: var(--white);
   font-weight:500; 
 }
-.socialMedia{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-} 
 header p{
     font-size: 2em;
     align-self: center;
