@@ -166,5 +166,8 @@ body{
     .section-projects #filter-nav{
         justify-content: flex-start;
     }
+    .container-projects .container-img .tech{
+        padding: 1rem 0;
+      }
   
 }
