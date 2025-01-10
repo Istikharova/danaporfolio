@@ -1,0 +1,58 @@
+body,
+html {
+  height: 100%;
+  min-height: 100%;
+}
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  gap: 2rem;
+}
+.main p {
+  text-align: center;
+}
+.error-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error-code h1,
+.error-code h2,
+.error-code div {
+  margin: 0;
+}
+.error-description {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.help-actions {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 959px) {
+  .help-actions {
+    flex-direction: column;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 769px) {
+}
+@media (max-width: 479px) {
+}

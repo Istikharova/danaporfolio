@@ -1,7 +1,6 @@
 main {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  height: 100vh;
 }
 main h1 {
   margin: 0;
@@ -49,7 +48,6 @@ main .main p {
 @media screen and (max-width: 920px) {
   main {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
   }
   .section-bubble {
     height: 100vh;
@@ -58,15 +56,12 @@ main .main p {
     flex-direction: column;
   }
   main .main {
-    height: 80vh;
     padding: 3rem;
   }
 }
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 5em;
-    line-height: 30px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    line-height: 40px;
   }
 }

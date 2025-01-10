@@ -122,6 +122,7 @@ header p {
     pointer-events: auto;
     opacity: 1;
     transition: opacity 0.5s ease, visibility 0s;
+    height: 100%;
   }
   .burger-icon {
     display: flex;

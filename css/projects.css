@@ -137,7 +137,7 @@ body {
     flex-direction: column;
   }
   .container-projects .projects .container-discription {
-    width: 90%;
+    width: 100%;
   }
   .container-projects .projects .container-img {
     width: 100%;
@@ -148,7 +148,8 @@ body {
     justify-content: flex-start;
   }
   .container-projects .projects {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+    gap: 2rem;
   }
 }
 
