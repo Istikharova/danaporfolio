@@ -4,54 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/gradientAnimation.css" />
-    <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../css/aboutMe.css" />
-    <link rel="stylesheet" href="../css/fadInAnimation.css" />
-
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gradientAnimation.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/aboutMe.css" />
+    <link rel="stylesheet" href="css/fadInAnimation.css" />
     <title>Über mich</title>
   </head>
   <body>
     <header>
       <p>Dana'Portfolio</p>
       <nav id="main-nav" class="container-nav">
-        <div class="burger-icon full">
+        <div class="burger-icon icon-size-m full">
           <span class="burger-bar"></span>
           <span class="burger-bar"></span>
           <span class="burger-bar"></span>
         </div>
         <div class="container-nav-li">
-          <ul class="btn full gradient ">
-            <li class="activeGradient" ><a class="nav-li" href="/">Hello</a></li>
-            <li class="activeGradient" ><a class="activeGradient" href="meine-projekte.html">Meine Projekte</a></li>
-            <li class="activeGradient" >
-              <a href="#">Über mich</a>
+          <ul class="btn full gradient">
+            <li class="activeGradient"><a class="nav-li" href="/">Hello</a></li>
+            <li class="activeGradient">
+              <a class="activeGradient" href="meine-projekte.html"
+                >Meine Projekte</a
+              >
             </li>
+            <li class="activeGradient"><a href="#">Über mich</a></li>
           </ul>
           <div class="socialMedia">
             <div class="bubble gradient icon">
               <a
+                class="icon-size-m"
                 href="https://github.com/Istikharova"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img class="icon-size-s" src="../img/icons/github.svg" alt="Github" title="Github"
+                ><img
+                  class="icon-size-s"
+                  src="img/icons/github.svg"
+                  alt="Github"
+                  title="Github"
               /></a>
             </div>
             <div class="bubble gradient icon">
               <a
+                class="icon-size-m"
                 href="https://www.linkedin.com/in/dana-istikharova-a420211a5/"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img class="icon-size-s"
-                  src="../img/icons/mdi_linkedin.svg"
+                ><img
+                  class="icon-size-s"
+                  src="img/icons/mdi_linkedin.svg"
                   alt="linedIn"
                   title="LinkedIn"
               /></a>
@@ -64,97 +71,213 @@
       <div class="about-me">
         <h1>Über<span>Ich bin Dana</span> mich</h1>
         <p>
-          Folgende Dinge im Leben machen mich unter anderem glücklich: Dankbarkeit für viele Chancen
-          und Möglichkeiten, Vertrauen schenken sowie Vertrauen erhalten. Und Gummibärchen!»
+          Folgende Dinge im Leben machen mich unter anderem glücklich:
+          Dankbarkeit für viele Chancen und Möglichkeiten, Vertrauen schenken
+          sowie Vertrauen erhalten. Und Gummibärchen!»
         </p>
       </div>
       <div class="img-me">
-        <img src="../img/dana_portfolio.png" alt="Dana" />
+        <img src="img/dana_portfolio.webp" alt="Dana" />
       </div>
       <div class="my-daten">
         <div class="hobbies card-white">
-          <button class="btn-hobbies full gradient">meine <br>Hobbies </button>
+          <button class="btn-hobbies full gradient">meine <br />Hobbies</button>
           <div class="container-icon">
-            <img class="icon-size-m"
-            src="../img/icons/game-icons_three-friends.svg"alt="mit Freunden was Unternehmen"title="Freunde"/>
-            <img class="icon-size-m"  src="../img/icons/laptop.svg" alt="Webseiten erstellen" title="Laptop" />
-            <img class="icon-size-m" src="../img/icons/mdi_paint-outline.svg" alt="Zeichnen" title="Zeichnen" />
-            <img class="icon-size-m"src="../img/icons/snowboard.svg" alt="Snowboarden" title="Snowboard" />
+            <img
+              class="icon-size-m"
+              src="img/icons/game-icons_three-friends.svg"
+              alt="mit Freunden was Unternehmen"
+              title="Freunde"
+            />
+            <img
+              class="icon-size-m"
+              src="img/icons/laptop.svg"
+              alt="Webseiten erstellen"
+              title="Laptop"
+            />
+            <img
+              class="icon-size-m"
+              src="img/icons/mdi_paint-outline.svg"
+              alt="Zeichnen"
+              title="Zeichnen"
+            />
+            <img
+              class="icon-size-m"
+              src="img/icons/snowboard.svg"
+              alt="Snowboarden"
+              title="Snowboard"
+            />
           </div>
         </div>
         <div class="contact">
           <p>Kontakt</p>
           <div class="email">
-            <img class="icon-size-s" src="../img/icons/mail-icon.svg" alt="mit Freunden was Unternehmen" title="Freunde"/>
+            <img
+              class="icon-size-s"
+              src="img/icons/mail-icon.svg"
+              alt="mit Freunden was Unternehmen"
+              title="Freunde"
+            />
             <p>dana.istikharova@bluewin.ch</p>
           </div>
         </div>
       </div>
     </section>
-
     <section class="bg-black">
-        <div class="section-skills section-width">
-          <h2>Meine Skills</h2>
-          
-          <div class="container-skills card-gradient-black">
-            <h4>CMS</h4>
-            <div class="container-brand-icon">
-              <div><img class="icon-size-m"  src="../img/icons/wordpress_icon.webp" alt="Wordpress logo"></div>
-              <div><img class="icon-size-m"  src="../img/icons/shopify_icon.webp" alt="Shopifay logo"></div>
-              <div><img class="icon-size-m" src="../img/icons/shopware_icon.webp" alt="Shopware logo"></div>
-              <div><img class="icon-size-m"  src="../img/icons/elementor-logo.webp" alt="Emelentor logo"></div>
+      <div class="section-skills section-width">
+        <h2>Meine Skills</h2>
+
+        <div class="container-skills card-gradient-black">
+          <h4>CMS</h4>
+          <div class="container-brand-icon">
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/wordpress_icon.webp"
+                alt="Wordpress logo"
+              />
+            </div>
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/shopify_icon.webp"
+                alt="Shopifay logo"
+              />
+            </div>
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/shopware_icon.webp"
+                alt="Shopware logo"
+              />
+            </div>
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/elementor-logo.webp"
+                alt="Emelentor logo"
+              />
             </div>
           </div>
-          
-          <div class="container-skills card-gradient-black">
-            <h4>Web entwicklung</h4>
-            <div class="container-brand-icon">
-              <div><img class="icon-size-m"  src="../img/icons/html_icon.webp" alt="html icon"></div>
-              <div><img class="icon-size-m"  src="../img/icons/css_icon.webp" alt="css icon"></div>
-              <div><img class="icon-size-m"  src="../img/icons/js_icon.webp" alt="javaScript icon"></div>
-              <div><img class="icon-size-m"  src="../img/icons/bootstrap-icon.svg" alt="Bootstrao icon"></div>
-              <div><img class="icon-size-m"  src="../img/icons/gsap_icon.webp" alt="gsap icon"></div>
-            </div>
-          </div>
-          
-          <div class="container-skills card-gradient-black icon">
-            <h4>Design Tools</h4>
-            <div class="container-brand-icon">
-              <div><img class="icon-size-m" src="../img/icons/photoshop-icon.webp" alt="photoshop icon"></div>
-              <div><img class="icon-size-m" src="../img/icons/indesign-icon.webp" alt="InDesign icon"></div>
-              <div><img class="icon-size-m" src="../img/icons/premiere-icon.webp" alt="PremierePro icon"></div>
-              <div><img class="icon-size-m" src="../img/icons/webdesigner-icon.webp" alt="Google Webdesigner icon"></div>
-              <div><img class="icon-size-m" src="../img/icons/figma-icon.webp" alt="Figma icon"></div>
-            </div>
-          </div>
-          
         </div>
+
+        <div class="container-skills card-gradient-black">
+          <h4>Web entwicklung</h4>
+          <div class="container-brand-icon">
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/html_icon.webp"
+                alt="html icon"
+              />
+            </div>
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/css_icon.webp"
+                alt="css icon"
+              />
+            </div>
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/js_icon.webp"
+                alt="javaScript icon"
+              />
+            </div>
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/bootstrap-icon.svg"
+                alt="Bootstrao icon"
+              />
+            </div>
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/gsap_icon.webp"
+                alt="gsap icon"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-skills card-gradient-black icon">
+          <h4>Design Tools</h4>
+          <div class="container-brand-icon">
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/photoshop-icon.webp"
+                alt="photoshop icon"
+              />
+            </div>
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/indesign-icon.webp"
+                alt="InDesign icon"
+              />
+            </div>
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/premiere-icon.webp"
+                alt="PremierePro icon"
+              />
+            </div>
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/webdesigner-icon.webp"
+                alt="Google Webdesigner icon"
+              />
+            </div>
+            <div>
+              <img
+                class="icon-size-m"
+                src="img/icons/figma-icon.webp"
+                alt="Figma icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
-        <a href="meineProjekte.html" class="full btn gradient">Meine Projekte</a>
+      <a href="meine-projekte" class="full btn gradient">Meine Projekte</a>
       <div class="footer"></div>
       <div class="container-footer">
         <p>Dana Istikharova</p>
         <div class="footer-mail">
-          <img class="icon-size-s" src="../img/icons/mail-icon.svg" alt="mail">
-          <a href="mailto:dana.istikharova@bluewin.ch">dana.istikharova@bluewin.ch</a>
+          <img class="icon-size-s" src="img/icons/mail-icon.svg" alt="mail" />
+          <a href="mailto:dana.istikharova@bluewin.ch"
+            >dana.istikharova@bluewin.ch</a
+          >
         </div>
         <div class="socialMedia">
           <div class="bubble gradient icon">
             <a
+              class="icon-size-m"
               href="https://github.com/Istikharova"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="../img/icons/github.svg" alt="Github" title="Github"
+              ><img
+                class="icon-size-s"
+                src="img/icons/github.svg"
+                alt="Github"
+                title="Github"
             /></a>
           </div>
           <div class="bubble gradient icon">
             <a
+              class="icon-size-m"
               href="https://www.linkedin.com/in/dana-istikharova-a420211a5/"
               target="_blank"
               rel="noopener noreferrer"
               ><img
-                src="../img/icons/mdi_linkedin.svg"
+                class="icon-size-s"
+                src="img/icons/mdi_linkedin.svg"
                 alt="linedIn"
                 title="LinkedIn"
             /></a>
@@ -162,8 +285,7 @@
         </div>
       </div>
     </footer>
-    <script src="../js/nav.js"></script>
-    <script src="../js/hobbiesBtn.js"></script>
-    <script src="../js/textAnimation.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/hobbiesBtn.js"></script>
   </body>
 </html>

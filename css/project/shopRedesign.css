@@ -1,32 +1,29 @@
-
-.card-three,.card-four{
-    grid-template-columns: 1fr 1fr; 
+.card-three,
+.card-four {
+  grid-template-columns: 1fr 1fr;
 }
-.card-three, .card-four{
-    grid-column: 1 / span 2;
+.card-three,
+.card-four {
+  grid-column: 1 / span 2;
 }
-
-.card-one .img-card{
-    background-image: url(../../img/project/shop-redesign/figma-redesign.webp);
+.card-one .img-card {
+  background-image: url(../../img/project/shop-redesign/figma-redesign.webp);
 }
-.card-two .img-card{
-    background-image: url(../../img/project/shop-redesign/shop-redesign-research.webp);
+.card-two .img-card {
+  background-image: url(../../img/project/shop-redesign/shop-redesign-research.webp);
 }
-.card-three .img-card{
-    background-image: url(../../img/project/shop-redesign/shop-redesign-ziele-szenario.webp);
+.card-three .img-card {
+  background-image: url(../../img/project/shop-redesign/shop-redesign-ziele-szenario.webp);
 }
-.card-four .img-one{
-    background-image: url(../../img/project/shop-redesign/shop-redesign-moodboard.webp);
+.card-four .img-one {
+  background-image: url(../../img/project/shop-redesign/shop-redesign-moodboard.webp);
 }
-.card-four .img-two{
-    background-image: url(../../img/project/shop-redesign/shop-redesign-farben.webp);
+.card-four .img-two {
+  background-image: url(../../img/project/shop-redesign/shop-redesign-farben.webp);
 }
-.card-four .img-three{
-    background-image: url(../../img/project/shop-redesign/shop-redesign-schrift.webp);
+.card-four .img-three {
+  background-image: url(../../img/project/shop-redesign/shop-redesign-schrift.webp);
 }
-.card-five .img-card{
-    background-image: url(../../img/project/shop-redesign/shop-wireframe.webp);
+.card-five .img-card {
+  background-image: url(../../img/project/shop-redesign/shop-wireframe.webp);
 }
-
-
-

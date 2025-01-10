@@ -1,179 +1,155 @@
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 /* Section Abount me */
-.section-about-me{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 5rem;
-    padding-top: 7rem;
-} 
-/* Section meine Daten */
-.my-daten{
-    display: grid;
-    gap: 1rem;
+.section-about-me {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 5rem;
+  padding-top: 7rem;
 }
-.my-daten .hobbies{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
+/* Section meine Daten */
+.my-daten {
+  display: grid;
+  gap: 1rem;
+}
+.my-daten .hobbies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
 }
 /* box meine daten */
-.section-about-me .my-daten button{
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    border: none;
-    font-size: 1.3em;
-    font-weight: 500;
-    cursor: pointer;
+.section-about-me .my-daten button {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: none;
+  font-size: 1.3em;
+  font-weight: 500;
+  cursor: pointer;
 }
-
 /* email */
-.contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background: var(--black);
-    border-radius: 10px; 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: var(--black);
+  border-radius: 10px;
 }
-.contact>p{
-    color: var(--green);
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 400;
+.contact > p {
+  color: var(--green);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
 }
-.contact .email{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
+.contact .email {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
 }
-.contact .email p{
-    color: var(--white);
+.contact .email p {
+  color: var(--white);
 }
-
 /* me img */
-.img-me{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.img-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.img-me img{
-   width: 100%;
-   border-radius: 10px;
-   box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1); 
+.img-me img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 57.3px 10px rgba(14, 29, 51, 0.1);
 }
-
 .hobbies .container-icon {
-    display: flex;
-    gap:1rem;
-    opacity: 0;
+  display: flex;
+  gap: 1rem;
+  opacity: 0;
 }
 /* icons open */
 .hobbies .container-icon.active {
-    opacity: 1;
-    transform: scale(1);
+  opacity: 1;
+  transform: scale(1);
 }
-
 /* icons open animation*/
 .hobbies .container-icon img {
-    -webkit-animation: fadeInLi 0.6s 0.2s forwards;
-            animation: fadeInLi 0.6s 0.2s forwards;
-  } 
+  -webkit-animation: fadeInLi 0.6s 0.2s forwards;
+  animation: fadeInLi 0.6s 0.2s forwards;
+}
 .hobbies .container-icon img:nth-child(2) {
-    -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .hobbies.container-icon img:nth-child(3) {
-    -webkit-animation-delay: 0.6s;
-            animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 .hobbies .container-iconimg:nth-child(4) {
-    -webkit-animation-delay: 0.8s;
-            animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
-
 /* section skills */
 .section-skills {
-    display: grid;
-    align-items: center;
-    gap: 2rem;
-    grid-template-columns: 10rem 1fr 1fr 1fr;
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+  grid-template-columns: 10rem 1fr 1fr 1fr;
 }
-
 /* media-queries */
-@media screen and (max-width: 1450px){
-    .section-skills{
-        grid-template-columns: repeat(2,1fr);
-    }
-} 
-
-@media screen and (max-width: 1400px){
-    .section-about-me {
-        grid-template-columns: repeat(2,1fr);
-    }
-    .section-about-me .about-me{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        display: flex;
-        gap: 5rem;
-    } 
-    .img-me{
-        justify-content: flex-start;
-    }
-} 
-
-@media screen and (max-width: 1100px){
-    .section-about-me .about-me{
-        grid-column-end: 2;
-        flex-direction: column;
-        gap: 0.5rem;
-    } 
-    .section-about-me {
-        grid-template-columns: 1fr;
-    }
-    .img-me {
-        justify-content: center;
-    }
-    .section-about-me .my-daten button{
-        margin-top: 1.5rem;
-    }
+@media screen and (max-width: 1450px) {
+  .section-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-@media screen and (max-width: 900px){
-    .section-skills {
-        grid-template-columns: 1fr;
-    }
-    .contact .email img{
-        width: 32px;
-        height: 32px;
-    }
-    .section-skills h4{
-        text-align: center;
-    }
+@media screen and (max-width: 1400px) {
+  .section-about-me {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-about-me .about-me {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    gap: 5rem;
+  }
+  .img-me {
+    justify-content: flex-start;
+  }
 }
-@media screen and (max-width: 600px){
-    .section-about-me{
-        width: 90%;
-        margin-top: 1rem;
-        padding-top: 1rem;
-    }
+@media screen and (max-width: 1100px) {
+  .section-about-me .about-me {
+    grid-column-end: 2;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .section-about-me {
+    grid-template-columns: 1fr;
+  }
+  .img-me {
+    justify-content: center;
+  }
+  .section-about-me .my-daten button {
+    margin-top: 1.5rem;
+  }
 }
-@media screen and (max-width: 500px){
-    .hobbies .container-icon img{
-        width: 48px;
-        height: 48px;
-    }
-    .contact .email img{
-        display: none;
-    }
-    .contact .email p{
-        font: 1em;
-    }
+@media screen and (max-width: 900px) {
+  .section-skills {
+    grid-template-columns: 1fr;
+  }
+  .section-skills h4 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact .email img {
+    display: none;
+  }
+  .contact .email p {
+    font: 1em;
+  }
 }

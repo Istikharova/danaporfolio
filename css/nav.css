@@ -1,44 +1,42 @@
-
-header{
+header {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   background: var(--white);
   width: 90%;
   margin: auto;
   padding: 3rem 0;
 }
-.container-nav{
+.container-nav {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
 }
-.container-nav-li{
+.container-nav-li {
   display: flex;
   gap: 0.5rem;
 }
 .container-nav-li ul {
   width: 100%;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   border-radius: 50px;
   text-align: center;
 }
 .container-nav-li ul li a {
-    color: var(--black);
-    font-size: 0.9em;
-    font-weight: 500;
-    margin: 1rem;
-    z-index: 10;
+  color: var(--black);
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 1rem;
+  z-index: 10;
 }
 .container-nav-li ul li a.link-active {
   color: var(--white);
-  font-weight:500; 
+  font-weight: 500;
 }
-header p{
-    font-size: 2em;
-    align-self: center;
+header p {
+  font-size: 2em;
+  align-self: center;
 }
-
 /* Burger Menu Styles */
 .burger-icon {
   display: none;
@@ -46,8 +44,6 @@ header p{
   justify-content: center;
   align-items: center;
   gap: 5px;
-  width: 50px;
-  height: 50px;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -71,35 +67,40 @@ header p{
   background: var(--black);
   top: -5px;
 }
-
 /* media queries */
-@media screen and (min-width: 1950px){
-  header{
+@media screen and (min-width: 1950px) {
+  header {
     width: 80%;
   }
 }
-@media screen and (max-width: 1730px){
-  header{
-   display: flex;
-   justify-content: space-between;
+@media screen and (max-width: 1730px) {
+  header {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 820px) {
-  header{
+  header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
-  header .socialMedia{
+  header .socialMedia {
     display: flex;
-  } 
+  }
+}
+@media screen and (max-width: 600px) {
+  .icon-size-m {
+    width: 48px;
+    height: 48px;
+  }
 }
 @media screen and (max-width: 500px) {
   .container-nav ul {
-    visibility: none; 
-    opacity: 0; 
+    visibility: none;
+    opacity: 0;
     pointer-events: none;
     width: 90vw;
     height: 40vh;
@@ -119,11 +120,10 @@ header p{
     display: flex;
     visibility: visible;
     pointer-events: auto;
-    opacity: 1; 
+    opacity: 1;
     transition: opacity 0.5s ease, visibility 0s;
   }
   .burger-icon {
     display: flex;
   }
 }
-

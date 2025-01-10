@@ -1,11 +1,9 @@
 const bubbleContainer = document.getElementById('container-bubble');
 
-
 const links = [
   { href: "https://github.com/Istikharova", icon: "img/icons/github.svg", alt: "GitHub" },
   { href: "https://www.linkedin.com/in/dana-istikharova-a420211a5/", icon: "img/icons/mdi_linkedin.svg", alt: "LinkedIn" },
 ];
-
 
 function createBubbles() {
   const totalBubbles = 15; 

@@ -1,29 +1,29 @@
-.card-one{
-    grid-column: 1 / span 2;
-    grid-template-columns: repeat(3, 1fr);
+.card-one {
+  grid-column: 1 / span 2;
+  grid-template-columns: repeat(3, 1fr);
 }
-.card-one .img-one{
-    background-image: url(../../img/project/sunrise-animation/skizze_sunrise.webp);
+.card-one .img-one {
+  background-image: url(../../img/project/sunrise-animation/skizze_sunrise.webp);
 }
-.card-one .img-two{
-    background-image: url(../../img/project/sunrise-animation/skizze_sunrise_2.webp);
+.card-one .img-two {
+  background-image: url(../../img/project/sunrise-animation/skizze_sunrise_2.webp);
 }
-.card-two .img-card{
-    background-image: url(../../img/project/sunrise-animation/sunrise_bilde_box.webp);
+.card-two .img-card {
+  background-image: url(../../img/project/sunrise-animation/sunrise_bilde_box.webp);
 }
-.card-three .img-card{
-    background-image: url(../../img/project/sunrise-animation/code_sunrise.webp);
+.card-three .img-card {
+  background-image: url(../../img/project/sunrise-animation/code_sunrise.webp);
 }
-@media screen and (min-width: 1151px) and (max-width: 1600px){
-    .card-one{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .card-one .img-one{
-        grid-column: 1;
-        grid-row: 2;
-    }
-    .card-one .img-two{
-        grid-column: 2;
-        grid-row: 2;
-    }   
+@media screen and (min-width: 1151px) and (max-width: 1600px) {
+  .card-one {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-one .img-one {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .card-one .img-two {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }

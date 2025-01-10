@@ -1,55 +1,62 @@
- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../css/projects.css" />
-    <link rel="stylesheet" href="../css/gradientAnimation.css" />
-    <link rel="stylesheet" href="../css/fadInAnimation.css" />
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/gradientAnimation.css" />
+    <link rel="stylesheet" href="css/fadInAnimation.css" />
     <title>Dana'Portfolio</title>
   </head>
   <body>
     <header>
       <p>Dana'Portfolio</p>
       <nav id="main-nav" class="container-nav">
-        <div class="burger-icon full">
+        <div class="burger-icon icon-size-m full">
           <span class="burger-bar"></span>
           <span class="burger-bar"></span>
           <span class="burger-bar"></span>
         </div>
         <div class="container-nav-li">
-          <ul class="btn full gradient ">
-            <li class="activeGradient" ><a class="nav-li" href="/">Hello</a></li>
-            <li class="activeGradient" ><a href="#">Meine Projekte</a></li>
-            <li class="activeGradient" >
-              <a href="ueber-mich.html">Über mich</a>
+          <ul class="btn full gradient">
+            <li class="activeGradient"><a class="nav-li" href="/">Hello</a></li>
+            <li class="activeGradient"><a href="#">Meine Projekte</a></li>
+            <li class="activeGradient">
+              <a href="ueber-mich">Über mich</a>
             </li>
           </ul>
           <div class="socialMedia">
             <div class="bubble gradient icon">
               <a
+                class="icon-size-m"
                 href="https://github.com/Istikharova"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img class="icon-size-s" src="../img/icons/github.svg" alt="Github" title="Github"
+                ><img
+                  class="icon-size-s"
+                  src="img/icons/github.svg"
+                  alt="Github"
+                  title="Github"
               /></a>
             </div>
             <div class="bubble gradient icon">
               <a
+                class="icon-size-m"
                 href="https://www.linkedin.com/in/dana-istikharova-a420211a5/"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img class="icon-size-s"
-                  src="../img/icons/mdi_linkedin.svg"
+                ><img
+                  class="icon-size-s"
+                  src="img/icons/mdi_linkedin.svg"
                   alt="linedIn"
                   title="LinkedIn"
               /></a>
@@ -59,216 +66,375 @@
       </nav>
     </header>
     <section class="section-projects">
-        <div class="title-header bg-black">
-          <div class="container-title section-width">
-            <h1 class="">Meine <span>Durchstöbere <br> meine Projekte</span> Projekte</h1>
+      <div class="title-header bg-black">
+        <div class="container-title section-width">
+          <h1 class="">
+            Meine
+            <span
+              >Durchstöbere <br />
+              meine Projekte</span
+            >
+            Projekte
+          </h1>
+        </div>
+      </div>
+      <div id="filter-nav">
+        <span class="stroke full"></span>
+        <div class="point-li">
+          <div class="point full"></div>
+          <div data-category="all" class="activeGradient list-category all">
+            Alle Projekte
           </div>
         </div>
-        <div id="filter-nav">
-          <span class="stroke full"></span>
-          <div class="point-li"><div class="point full"></div><div data-category="all" class="activeGradient list-category all">Alle Projekte</div></div>
-          <span class="stroke full"></span>
-          <div class="point-li"><div class="point ghost"></div><div data-category="webdesign" class="activeGradient list-category webdesign">Webdesign</div></div>
-          <span class="stroke full"></span>
-          <div class="point-li"><div class="point ghost"></div><div data-category="webentwicklung" class="activeGradient list-category webentwicklung">Webentwicklung</div></div>
-          <span class="stroke full"></span>
-          <div class="point-li"><div class="point ghost"></div><div data-category="graphicdesign"class="activeGradient list-category graphicdesign">UX-/Graphicdesign</div></div>
-          <span class="stroke full"></span>
+        <span class="stroke full"></span>
+        <div class="point-li">
+          <div class="point ghost"></div>
+          <div
+            data-category="webdesign"
+            class="activeGradient list-category webdesign"
+          >
+            Webdesign
+          </div>
         </div>
-
+        <span class="stroke full"></span>
+        <div class="point-li">
+          <div class="point ghost"></div>
+          <div
+            data-category="webentwicklung"
+            class="activeGradient list-category webentwicklung"
+          >
+            Webentwicklung
+          </div>
+        </div>
+        <span class="stroke full"></span>
+        <div class="point-li">
+          <div class="point ghost"></div>
+          <div
+            data-category="graphicdesign"
+            class="activeGradient list-category graphicdesign"
+          >
+            UX-/Graphicdesign
+          </div>
+        </div>
+        <span class="stroke full"></span>
+      </div>
       <div class="allProjects section-width">
-       
-<!-- projecte -->
-       <div data-category="all" class="container-projects fade all">
-        <!-- hier dynamisch mit js -->
+        <!-- projekte -->
+        <div data-category="all" class="container-projects fade all">
+          <!-- hier dynamisch mit js -->
         </div>
-        <div data-category="webdesign" class="container-projects fade webdesign">
+        <div
+          data-category="webdesign"
+          class="container-projects fade webdesign"
+        >
           <div class="projects wd">
             <div class="container-img img-card">
-              <img class="card-white img-device"
-                src="../img/mugsch_device.webp"
-                alt="mugsch Online Shop" title="mugsch online Shop" />
-                <div class="tech">
-                  <h3>Verwendete Technologien</h3>
-                  <div class="container-brand-icon">
-                    <div class="card-white "><img class="icon-size-m" src="../img/icons/shopify_icon.webp" alt="Shopify icon"></div>
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/figma-icon.webp" alt="Figma icon"></div>
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/illustrator-icon.webp" alt="Illustrator icon"></div>
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/photoshop-icon.webp" alt="Photoshop icon"></div>
+              <img
+                class="card-white img-device"
+                src="img/mugsch_device.webp"
+                alt="mugsch Online Shop"
+                title="mugsch online Shop"
+              />
+              <div class="tech">
+                <h3>Verwendete Technologien</h3>
+                <div class="container-brand-icon">
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/shopify_icon.webp"
+                      alt="Shopify icon"
+                    />
                   </div>
-                </a>
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/figma-icon.webp"
+                      alt="Figma icon"
+                    />
+                  </div>
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/illustrator-icon.webp"
+                      alt="Illustrator icon"
+                    />
+                  </div>
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/photoshop-icon.webp"
+                      alt="Photoshop icon"
+                    />
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="container-discription">
               <div class="container-text">
                 <h2>mugsch Online Shop</h2>
                 <p>
-                  Ein Herzensprojekt, bei dem ich den Webshop für meine Schwester realisieren durfte.
-                  Von der Entwicklung des Corporate Designs bis zur Umsetzung mit Shopify. <br><br>
-                  Eine feine Auswahl an wunderschönen Keramiktassen bildet den Anfang - handlich, stilvoll und in toller Qualität. Mit der Vision, Tassen, Geschirr und weitere schöne Dinge direkt in euer Zuhause zu bringen, wächst der Shop Schritt für Schritt.
+                  Ein Herzensprojekt, bei dem ich den Webshop für meine
+                  Schwester realisieren durfte. Von der Entwicklung des
+                  Corporate Designs bis zur Umsetzung mit Shopify. <br /><br />
+                  Eine feine Auswahl an wunderschönen Keramiktassen bildet den
+                  Anfang - handlich, stilvoll und in toller Qualität. Mit der
+                  Vision, Tassen, Geschirr und weitere schöne Dinge direkt in
+                  euer Zuhause zu bringen, wächst der Shop Schritt für Schritt.
                 </p>
               </div>
-              <a
-                  href="meine-projekte/mugsch.html"
-                  class="full btn gradient"
-                  >mehr dazu</a>
+              <a href="projekte/mugsch" class="full btn gradient">mehr dazu</a>
             </div>
           </div>
-
         </div>
-        <div data-category="webentwicklung" class="container-projects fade webentwicklung">
+        <div
+          data-category="webentwicklung"
+          class="container-projects fade webentwicklung"
+        >
           <div class="projects">
             <div class="container-img">
-              <img class="card-white img-device"
-                src="../img/sunrise_device.webp"
-                alt="Sunrise Animation" title="Sunrise Animation" />
-                <div class="tech">
-                  <h3>Verwendete Technologien</h3>
-                  <div class="container-brand-icon">
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/gsap_icon.webp" alt="GSAP icon"></div>
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/css_icon.webp" alt="CSS icon"></div>
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/html_icon.webp" alt="HTML icon"></div>
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/photoshop-icon.webp" alt="Photoshop icon"></div>
+              <img
+                class="card-white img-device"
+                src="img/sunrise_device.webp"
+                alt="Sunrise Animation"
+                title="Sunrise Animation"
+              />
+              <div class="tech">
+                <h3>Verwendete Technologien</h3>
+                <div class="container-brand-icon">
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/gsap_icon.webp"
+                      alt="GSAP icon"
+                    />
+                  </div>
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/css_icon.webp"
+                      alt="CSS icon"
+                    />
+                  </div>
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/html_icon.webp"
+                      alt="HTML icon"
+                    />
+                  </div>
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/photoshop-icon.webp"
+                      alt="Photoshop icon"
+                    />
                   </div>
                 </div>
+              </div>
             </div>
             <div class="container-discription">
               <div class="container-text">
                 <h2>Sunrise Animation</h2>
                 <p>
-                  Ein interaktiver Webbanner, den ich als Projekt an der SAE Zürich entwickelt habe. 
-                  Ziel war es, mit der GSAP Library eine Animation zu erstellen, die zur Sunrise passt 
-                  und Nutzer durch interaktive Elemente anspricht.
+                  Ein interaktiver Webbanner, den ich als Projekt an der SAE
+                  Zürich entwickelt habe. Ziel war es, mit der GSAP Library eine
+                  Animation zu erstellen, die zur Sunrise passt und Nutzer durch
+                  interaktive Elemente anspricht.
                 </p>
               </div>
-                <a
-                  href="meine-projekte/sunrise-animation.html"
-                  class="full btn gradient"
-                  >mehr dazu</a
-                >
+              <a href="projekte/sunrise-animation" class="full btn gradient"
+                >mehr dazu</a
+              >
             </div>
           </div>
           <div class="projects">
             <div class="container-img">
-              <img class="card-white img-device"
-                src="../img/linde_device.webp"
-                alt="Sunrise Animation" title="Sunrise Animation" />
-                <div class="tech">
-                  <h3>Verwendete Technologien</h3>
-                  <div class="container-brand-icon">
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/html_icon.webp" alt="HTML icon"></div>
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/css_icon.webp" alt="CSS icon"></div>
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/js_icon.webp" alt="JavaScript icon"></div>
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/figma-icon.webp" alt="Figma icon"></div>
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/photoshop-icon.webp" alt="Photoshop icon"></div>
+              <img
+                class="card-white img-device"
+                src="img/linde_device.webp"
+                alt="Sunrise Animation"
+                title="Sunrise Animation"
+              />
+              <div class="tech">
+                <h3>Verwendete Technologien</h3>
+                <div class="container-brand-icon">
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/html_icon.webp"
+                      alt="HTML icon"
+                    />
+                  </div>
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/css_icon.webp"
+                      alt="CSS icon"
+                    />
+                  </div>
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/js_icon.webp"
+                      alt="JavaScript icon"
+                    />
+                  </div>
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/figma-icon.webp"
+                      alt="Figma icon"
+                    />
+                  </div>
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/photoshop-icon.webp"
+                      alt="Photoshop icon"
+                    />
                   </div>
                 </div>
+              </div>
             </div>
             <div class="container-discription">
               <div class="container-text">
                 <h2>Restaurant Linde</h2>
                 <p>
-                  Für mein erstes Website Projekt habe ich das Restaurant Linde neu gestaltet. 
-                  Ziel war es, von Grund auf eine Website zu erstellen, die nicht nur optisch ansprechend, 
-                  sondern auch funktional ist. Dabei lag der Fokus auf der Entwicklung eines klaren Konzepts und der Umsetzung mit HTML, 
-                  CSS und JavaScript.
+                  Für mein erstes Website Projekt habe ich das Restaurant Linde
+                  neu gestaltet. Ziel war es, von Grund auf eine Website zu
+                  erstellen, die nicht nur optisch ansprechend, sondern auch
+                  funktional ist. Dabei lag der Fokus auf der Entwicklung eines
+                  klaren Konzepts und der Umsetzung mit HTML, CSS und
+                  JavaScript.
                 </p>
               </div>
-                <a
-                  href="meine-projekte/restaurant-linde.html"
-                  class="full btn gradient"
-                  >mehr dazu</a
-                >
+              <a href="projekte/restaurant-linde" class="full btn gradient"
+                >mehr dazu</a
+              >
             </div>
           </div>
-
         </div>
-        <div data-category="graphicdesign" class="container-projects fade graphicdesign">
+        <div
+          data-category="graphicdesign"
+          class="container-projects fade graphicdesign"
+        >
           <div class="projects wd">
             <div class="container-img">
-              <img class="card-white img-device"
-                src="../img/blackfriday_device.webp"
-                alt="Black Friday Visuals" title="Black Friday Visuals" />
-                <div class="tech">
-                  <h3>Verwendete Technologien</h3>
-                  <div class="container-brand-icon">
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/figma-icon.webp" alt="Figma icon"></div>
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/webdesigner-icon.webp" alt="Google Webdesigner icon"></div>
+              <img
+                class="card-white img-device"
+                src="img/blackfriday_device.webp"
+                alt="Black Friday Visuals"
+                title="Black Friday Visuals"
+              />
+              <div class="tech">
+                <h3>Verwendete Technologien</h3>
+                <div class="container-brand-icon">
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/figma-icon.webp"
+                      alt="Figma icon"
+                    />
+                  </div>
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/webdesigner-icon.webp"
+                      alt="Google Webdesigner icon"
+                    />
                   </div>
                 </div>
+              </div>
             </div>
             <div class="container-discription">
               <div class="container-text">
                 <h2>Black Friday Visuals</h2>
                 <p>
-                  Für den Black Friday habe ich eine animierte Werbekampagne für die Kaffeezentrale Schweiz erstellt. Ziel war es, 
-                  mit auffälligen Visuals die Aufmerksamkeit der Zielgruppe zu gewinnen und sie auf die Website zu lenken. 
-                  Die Kampagne wurde auf Radio my105 und verschiedenen Social Media Kanälen ausgespielt. 
+                  Für den Black Friday habe ich eine animierte Werbekampagne für
+                  die Kaffeezentrale Schweiz erstellt. Ziel war es, mit
+                  auffälligen Visuals die Aufmerksamkeit der Zielgruppe zu
+                  gewinnen und sie auf die Website zu lenken. Die Kampagne wurde
+                  auf Radio my105 und verschiedenen Social Media Kanälen
+                  ausgespielt.
                 </p>
               </div>
-            
-                <a
-                  href="meine-projekte/black-friday.html"
-                  class="full btn gradient"
-                  >mehr dazu</a>
+              <a href="projekte/black-friday" class="full btn gradient"
+                >mehr dazu</a
+              >
             </div>
           </div>
-
           <div class="projects wd">
             <div class="container-img">
-              <img class="card-white img-device"
-                src="../img/shop-redesign-device.webp"
-                alt="Shop Redesign" title="Shop Redesign" />
-                <div class="tech">
-                  <h3>Verwendete Technologien</h3>
-                  <div class="container-brand-icon">
-                    <div class="card-white"><img class="icon-size-m" src="../img/icons/figma-icon.webp" alt="Figma icon"></div>
+              <img
+                class="card-white img-device"
+                src="img/shop-redesign-device.webp"
+                alt="Shop Redesign"
+                title="Shop Redesign"
+              />
+              <div class="tech">
+                <h3>Verwendete Technologien</h3>
+                <div class="container-brand-icon">
+                  <div class="card-white">
+                    <img
+                      class="icon-size-m"
+                      src="img/icons/figma-icon.webp"
+                      alt="Figma icon"
+                    />
                   </div>
                 </div>
+              </div>
             </div>
             <div class="container-discription">
               <div class="container-text">
                 <h2>Prototyp mit Figma</h2>
                 <p>
-                  Im Rahmen meines Praktikums bei Merkle habe ich ein Redesign für einen Online-Shop erstellt. 
-                  Das Ziel war, Figma besser zu erlernen und einen Prototyp zu entwickeln
+                  Im Rahmen meines Praktikums bei Merkle habe ich ein Redesign
+                  für einen Online-Shop erstellt. Das Ziel war, Figma besser zu
+                  erlernen und einen Prototyp zu entwickeln
                 </p>
               </div>
-                <a
-                  href="meine-projekte/shop-redesign.html"
-                  class="full btn gradient"
-                  >mehr dazu</a>
+              <a href="projekte/shop-redesign" class="full btn gradient"
+                >mehr dazu</a
+              >
             </div>
           </div>
-
         </div>
       </div>
     </section>
     <footer>
-      <a href="ueberMich.html" class="btn ghost">Über mich</a>
+      <a href="ueber-mich" class="btn ghost">Über mich</a>
       <div class="footer"></div>
       <div class="container-footer">
         <p>Dana Istikharova</p>
         <div class="footer-mail">
-          <img class="icon-size-s" src="../img/icons/mail-icon.svg" alt="">
-          <a href="mailto:dana.istikharova@bluewin.ch">dana.istikharova@bluewin.ch</a>
+          <img class="icon-size-s" src="img/icons/mail-icon.svg" alt="" />
+          <a href="mailto:dana.istikharova@bluewin.ch"
+            >dana.istikharova@bluewin.ch</a
+          >
         </div>
         <div class="socialMedia">
           <div class="bubble gradient icon">
             <a
+              class="icon-size-m"
               href="https://github.com/Istikharova"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="../img/icons/github.svg" alt="Github" title="Github"
+              ><img
+                class="icon-size-s"
+                src="img/icons/github.svg"
+                alt="Github"
+                title="Github"
             /></a>
           </div>
           <div class="bubble gradient icon">
             <a
+              class="icon-size-m"
               href="https://www.linkedin.com/in/dana-istikharova-a420211a5/"
               target="_blank"
               rel="noopener noreferrer"
               ><img
-                src="../img/icons/mdi_linkedin.svg"
+                class="icon-size-s"
+                src="img/icons/mdi_linkedin.svg"
                 alt="linedIn"
                 title="LinkedIn"
             /></a>
@@ -276,8 +442,7 @@
         </div>
       </div>
     </footer>
-    <script src="../js/nav.js"></script>
-    <script src="../js/project.js"></script>
-    <script src="../js/textAnimation.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/project.js"></script>
   </body>
 </html>

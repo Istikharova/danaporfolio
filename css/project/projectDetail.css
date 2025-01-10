@@ -1,221 +1,214 @@
-
-.content-info{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 5rem;
+.content-info {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 5rem;
 }
-.content-info .container-info-box{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+.content-info .container-info-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
 .content-info h1 {
-    font-size: 2em;
-    margin-bottom: 5rem;
+  font-size: 2em;
+  margin-bottom: 5rem;
 }
-.content-info h1 span{
-    font-size: 2.5em;
+.content-info h1 span {
+  font-size: 2.5em;
 }
-.info-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.info-box p{
-    margin-bottom: 1rem;
-    color: var(--green);
-    font-weight: 500;
-    text-transform: uppercase;
+.info-box p {
+  margin-bottom: 1rem;
+  color: var(--green);
+  font-weight: 500;
+  text-transform: uppercase;
 }
-.info-box ul, .card-grid ul{
-    margin-left: 2rem;
+.info-box ul,
+.card-grid ul {
+  margin-left: 2rem;
 }
-.card-grid ul{
-    padding-bottom: 2rem;
+.card-grid ul {
+  padding-bottom: 2rem;
 }
-.info-box ul li, .card-grid ul li{
-    font-size: 1.3em;
-    list-style-type:disc !important;
+.info-box ul li,
+.card-grid ul li {
+  font-size: 1.3em;
+  list-style-type: disc !important;
 }
-.card-grid .card-title-ul li{
-    font-size: 1em;
+.card-grid .card-title-ul li {
+  font-size: 1em;
 }
-.card-grid .card-title-ul{
-    padding-bottom: 0;
+.card-grid .card-title-ul {
+  padding-bottom: 0;
 }
-.section-info .container-small-discription{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-row: auto;
-    gap: 2rem;
+.section-info .container-small-discription {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: auto;
+  gap: 2rem;
 }
-.section-info .container-small-discription img{
-    width: 100%;
-    height: 100%;
+.section-info .container-small-discription img {
+  width: 100%;
+  height: 100%;
 }
-.section-info .container-small-discription h2{
-    align-self: center;
+.section-info .container-small-discription h2 {
+  align-self: center;
 }
 .container-more-project,
-.project-card{
-    display: flex;
-    gap: 2rem;
+.project-card {
+  display: flex;
+  gap: 2rem;
 }
-.container-more-project{
-    overflow-x: auto;
-    padding-bottom: 2rem;
+.container-more-project {
+  overflow-x: auto;
+  padding-bottom: 2rem;
 }
-.container-content .card-title p{
-    padding-bottom: 2rem;
+.container-content .card-title p {
+  padding-bottom: 2rem;
 }
-.card-gradient-green{
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    cursor: pointer;
-    transition: transform 0.5s ease;
-
+.card-gradient-green {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
+  transition: transform 0.5s ease;
 }
-.more-project-title{
-    display: flex;
-    flex-direction: column;
+.more-project-title {
+  display: flex;
+  flex-direction: column;
 }
-.more-project-title a{
-    color: var(--black);
-    font-size: 1.5em;
-    
+.more-project-title a {
+  color: var(--black);
+  font-size: 1.5em;
 }
 .card-gradient-green:hover,
-.img-card:hover,
-.link-file:hover
-{
-    transform: scale(0.97);
+.img-card:hover {
+  transform: scale(0.97);
 }
-
 /* grid template vorgehensweise  */
-.container-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 2rem;
-    margin-bottom: 5rem;
+.container-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+  margin-bottom: 5rem;
 }
-.card-grid{
-    display: grid;
-    grid-template-rows: auto;
-    gap: 5rem;
-    padding: 3rem;
+.card-grid {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 5rem;
+  padding: 3rem;
 }
-.card-grid .img-card{
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    width: 100%;
-    min-height: 400px;
-    background-repeat: no-repeat;
-    background-size: contain, cover;
-    transition: transform 0.2s ease;
-} 
-.project-card img{
-    width: 240px;
-    height: 170px;
+.card-grid .img-card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  transition: transform 0.2s ease;
+}
+.project-card img {
+  width: 240px;
+  height: 170px;
 }
 /* img full size */
 /* Modal Styling */
 
 /* Lupe oben rechts */
 .icon-zoom {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 32px;
-    height: 32px;
-  }
-
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+}
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--opablack);
-    display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--opablack);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0px 4px 47.7px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.modal.active {
+  display: flex;
+}
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: var(--black);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background: var(--green);
+  border-radius: 100%;
+}
+/* media quaries */
+@media screen and (max-width: 1150px) {
+  .container-content,
+  .content-info {
+    grid-template-columns: 1fr;
+  }
+  .container-content .card-grid {
+    grid-template-columns: 1fr;
+    grid-column: 1 / span 2;
+  }
+}
+@media screen and (max-width: 950px) {
+  .project-title {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
   }
-  .modal img {
-    max-width: 90%;
-    max-height: 90%;
-    box-shadow: 0px 4px 47.7px -3px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+  .section-info .container-small-discription {
+    grid-template-columns: 1fr;
   }
-  .modal.active {
-    display: flex;
+}
+@media screen and (max-width: 650px) {
+  .container-content .card-grid {
+    gap: 2rem;
+    padding: 1.5rem;
   }
-  .modal-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 20px;
-    color: var(--black);
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    background: var(--green);
-    border-radius:100%;
+  .content-info .container-info-box {
+    grid-template-columns: 1fr;
   }
-
-/* media quaries */
-@media screen and (max-width: 1150px){
-    .container-content,.content-info{
-        grid-template-columns: 1fr;
-    }
-    .container-content .card-grid{
-        grid-template-columns: 1fr;
-        grid-column:  1/span 2;
-    }
+  .card-grid .img-card {
+    min-height: 300px;
+  }
 }
-@media screen and (max-width: 950px){
-    .project-title{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .section-info .container-small-discription{
-        grid-template-columns: 1fr;
-    }
-
+@media screen and (max-width: 600px) {
+  .content-info h1 span {
+    line-height: 60px;
+  }
 }
-@media screen and (max-width: 650px){
-    .container-content .card-grid{
-        gap: 2rem;
-        padding: 1.5rem;
-    }
-    .content-info .container-info-box{
-        grid-template-columns: 1fr;
-    }
-    .card-grid .img-card{
-        min-height: 300px;
-    }
-   
-}
-@media screen and (max-width: 600px){
-    .content-info h1 span{
-        line-height: 60px;
-      }
-}
-@media screen and (max-width: 415px){
-    .content-info .container-info-box{
-        grid-template-columns: 1fr;
-    }
-    .content-info h1{
-        font-size: 1.5em;
-    }
-    .content-info h1 span{
-      font-size: 2.5em;
-    }
+@media screen and (max-width: 415px) {
+  .content-info .container-info-box {
+    grid-template-columns: 1fr;
+  }
+  .content-info h1 {
+    font-size: 1.5em;
+  }
+  .content-info h1 span {
+    font-size: 2.5em;
+  }
 }

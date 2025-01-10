@@ -1,39 +1,38 @@
-.card-grid{
-    grid-template-columns: repeat(2, 1fr);
-}  
-
-.container-content .card-one{
-    grid-column: 1 / span 2;
+.card-grid {
+  grid-template-columns: repeat(2, 1fr);
 }
-.card-one .img-one{
-    background-image: url(../../img/project/mugsch/ideensammlung\ brand\ style\ 1.png);
-    grid-column: 2;
-    grid-row:  1 / span 3;
+.container-content .card-one {
+  grid-column: 1 / span 2;
 }
-.card-one .img-two{
-    background-image: url(../../img/project/mugsch/moodboard\ final\ 2.png);
+.card-one .img-one {
+  background-image: url(../../img/project/mugsch/ideensammlung\ brand\ style\ 1.png);
+  grid-column: 2;
+  grid-row: 1 / span 3;
+}
+.card-one .img-two {
+  background-image: url(../../img/project/mugsch/moodboard\ final\ 2.png);
 }
 .card-two .card-title,
-.card-three .card-title{
-    grid-row:  1;
-    grid-column:  1 / span 3;
+.card-three .card-title {
+  grid-row: 1;
+  grid-column: 1 / span 3;
 }
 .card-two .img-card,
-.card-three .img-card{
-    grid-row:  2;
-    grid-column:  1 / span 3;
+.card-three .img-card {
+  grid-row: 2;
+  grid-column: 1 / span 3;
 }
-.card-two .img-card{
-    background-image: url(../../img/project/mugsch/logo_ideensuche.png);  
+.card-two .img-card {
+  background-image: url(../../img/project/mugsch/logo_ideensuche.png);
 }
-.card-three .img-card{
-    background-image: url(../../img/project/mugsch/screendesign.png);
+.card-three .img-card {
+  background-image: url(../../img/project/mugsch/screendesign.png);
 }
 
 /* media Queries */
-@media screen and (max-width: 950px){
-    .card-one .img-one{
-        grid-column: 1;
-        grid-row: 3;
-    }
+@media screen and (max-width: 950px) {
+  .card-one .img-one {
+    grid-column: 1;
+    grid-row: 3;
+  }
 }

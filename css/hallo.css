@@ -1,12 +1,12 @@
-main{
+main {
   display: grid;
-  grid-template-columns: 2fr 3fr; 
-  height: 100vh; 
+  grid-template-columns: 2fr 3fr;
+  height: 100vh;
 }
-main h1{
+main h1 {
   margin: 0;
 }
-main .main{
+main .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,15 +14,14 @@ main .main{
   background: var(--white);
   padding: 6rem;
 }
-main .main p{
+main .main p {
   font-size: 1.5em;
   padding-bottom: 4rem;
 }
-.btn-container{
+.btn-container {
   display: flex;
   gap: 50px;
 }
-
 /* section bubble */
 .section-bubble {
   background: var(--black);
@@ -46,29 +45,28 @@ main .main p{
   height: 50px;
   object-fit: contain;
 }
-
 /* media queries */
 @media screen and (max-width: 920px) {
   main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .section-bubble{
+  .section-bubble {
     height: 100vh;
   }
-  .btn-container{
+  .btn-container {
     flex-direction: column;
   }
-  main .main{
+  main .main {
     height: 80vh;
     padding: 3rem;
   }
 }
-@media screen and (max-width: 500px){
-  h1{
+@media screen and (max-width: 500px) {
+  h1 {
     font-size: 5em;
     line-height: 30px;
     justify-content: flex-start;
     align-items: flex-start;
   }
-} 
+}
